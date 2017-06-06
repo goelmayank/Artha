@@ -1,6 +1,6 @@
-## Synopsis
+# WinFormApplication
 
-A WInform Application that displays the text under the mouse.
+A Winform Application to read text below the cursor from anywhere on the window
 
 ## Purpose 
 
@@ -8,7 +8,8 @@ A simple UI for enabling users to work in softwarwes having a foreign language i
 
 ## Versions
 
-Version1: The initial csv file used has the Japanese text in the PG-1000 UI and its English equivalent.
+version 0.0.1: The initial csv file used has the Japanese text in the PG-1000 UI and its English equivalent.
+version 0.0.2: This can read data from csv,accessdb, xml format files and add to accessdb and xml format files. The primary window has only one textbox for displaying text under the mouse after conversion(if one is available). The subsidiary window allows to add key value pairs to the xml and accessdb format files. Supported languages are Japanese and English.
 
 ## How it works
 
