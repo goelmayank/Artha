@@ -1,0 +1,10 @@
+C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\C# and VB\AccessConnections_cs\bin\Debug\AccessConnections_cs.dll
+C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\C# and VB\AccessConnections_cs\bin\Debug\AccessConnections_cs.pdb
+C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\C# and VB\AccessConnections_cs\obj\Debug\AccessConnections_cs.csprojResolveAssemblyReference.cache
+C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\C# and VB\AccessConnections_cs\obj\Debug\AccessConnections_cs.dll
+C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\C# and VB\AccessConnections_cs\obj\Debug\AccessConnections_cs.pdb
+C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\AccessConnections_cs\bin\Debug\AccessConnections_cs.dll
+C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\AccessConnections_cs\bin\Debug\AccessConnections_cs.pdb
+C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\AccessConnections_cs\obj\Debug\AccessConnections_cs.csprojResolveAssemblyReference.cache
+C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\AccessConnections_cs\obj\Debug\AccessConnections_cs.dll
+C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\AccessConnections_cs\obj\Debug\AccessConnections_cs.pdb

@@ -32,17 +32,11 @@
             this.tmrCursorPos = new System.Windows.Forms.Timer(this.components);
             this.btnStart = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
-            this.lblXPos = new System.Windows.Forms.Label();
-            this.lblYPos = new System.Windows.Forms.Label();
-            this.lblWinText = new System.Windows.Forms.Label();
-            this.lblHWnd = new System.Windows.Forms.Label();
-            this.rtbCaption = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ConversionTextBox = new System.Windows.Forms.RichTextBox();
-            this.rtbClassName = new System.Windows.Forms.RichTextBox();
-            this.lblClassName = new System.Windows.Forms.Label();
-            this.rtbWinParent = new System.Windows.Forms.RichTextBox();
-            this.lblWinParentCls = new System.Windows.Forms.Label();
+            this.BackendButton = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // tmrCursorPos
@@ -70,56 +64,10 @@
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
-            // lblXPos
-            // 
-            this.lblXPos.AutoSize = true;
-            this.lblXPos.Location = new System.Drawing.Point(16, 12);
-            this.lblXPos.Name = "lblXPos";
-            this.lblXPos.Size = new System.Drawing.Size(49, 13);
-            this.lblXPos.TabIndex = 2;
-            this.lblXPos.Text = "Mouse Y";
-            // 
-            // lblYPos
-            // 
-            this.lblYPos.AutoSize = true;
-            this.lblYPos.Location = new System.Drawing.Point(123, 12);
-            this.lblYPos.Name = "lblYPos";
-            this.lblYPos.Size = new System.Drawing.Size(49, 13);
-            this.lblYPos.TabIndex = 3;
-            this.lblYPos.Text = "Mouse Y";
-            // 
-            // lblWinText
-            // 
-            this.lblWinText.AutoSize = true;
-            this.lblWinText.Location = new System.Drawing.Point(16, 74);
-            this.lblWinText.Name = "lblWinText";
-            this.lblWinText.Size = new System.Drawing.Size(85, 13);
-            this.lblWinText.TabIndex = 4;
-            this.lblWinText.Text = "Window Caption";
-            // 
-            // lblHWnd
-            // 
-            this.lblHWnd.AutoSize = true;
-            this.lblHWnd.Location = new System.Drawing.Point(16, 42);
-            this.lblHWnd.Name = "lblHWnd";
-            this.lblHWnd.Size = new System.Drawing.Size(83, 13);
-            this.lblHWnd.TabIndex = 5;
-            this.lblHWnd.Text = "Window Handle";
-            // 
-            // rtbCaption
-            // 
-            this.rtbCaption.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbCaption.Location = new System.Drawing.Point(19, 90);
-            this.rtbCaption.Name = "rtbCaption";
-            this.rtbCaption.ReadOnly = true;
-            this.rtbCaption.Size = new System.Drawing.Size(452, 41);
-            this.rtbCaption.TabIndex = 8;
-            this.rtbCaption.Text = "";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 258);
+            this.label1.Location = new System.Drawing.Point(0, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 13);
             this.label1.TabIndex = 11;
@@ -128,67 +76,49 @@
             // ConversionTextBox
             // 
             this.ConversionTextBox.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConversionTextBox.Location = new System.Drawing.Point(19, 274);
+            this.ConversionTextBox.Location = new System.Drawing.Point(0, 33);
             this.ConversionTextBox.Name = "ConversionTextBox";
             this.ConversionTextBox.ReadOnly = true;
-            this.ConversionTextBox.Size = new System.Drawing.Size(452, 41);
+            this.ConversionTextBox.Size = new System.Drawing.Size(452, 21);
             this.ConversionTextBox.TabIndex = 12;
             this.ConversionTextBox.Text = "";
             // 
-            // rtbClassName
+            // BackendButton
             // 
-            this.rtbClassName.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbClassName.Location = new System.Drawing.Point(19, 150);
-            this.rtbClassName.Name = "rtbClassName";
-            this.rtbClassName.ReadOnly = true;
-            this.rtbClassName.Size = new System.Drawing.Size(452, 41);
-            this.rtbClassName.TabIndex = 7;
-            this.rtbClassName.Text = "";
+            this.BackendButton.Location = new System.Drawing.Point(200, 7);
+            this.BackendButton.Name = "BackendButton";
+            this.BackendButton.Size = new System.Drawing.Size(109, 23);
+            this.BackendButton.TabIndex = 13;
+            this.BackendButton.Text = "Add Key Value Pair";
+            this.BackendButton.UseVisualStyleBackColor = true;
+            this.BackendButton.Click += new System.EventHandler(this.BackendButton_Click);
             // 
-            // lblClassName
+            // listBox1
             // 
-            this.lblClassName.AutoSize = true;
-            this.lblClassName.Location = new System.Drawing.Point(16, 134);
-            this.lblClassName.Name = "lblClassName";
-            this.lblClassName.Size = new System.Drawing.Size(105, 13);
-            this.lblClassName.TabIndex = 6;
-            this.lblClassName.Text = "Window Class Name";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(0, 61);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(218, 134);
+            this.listBox1.TabIndex = 14;
             // 
-            // rtbWinParent
+            // listBox2
             // 
-            this.rtbWinParent.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbWinParent.Location = new System.Drawing.Point(19, 214);
-            this.rtbWinParent.Name = "rtbWinParent";
-            this.rtbWinParent.ReadOnly = true;
-            this.rtbWinParent.Size = new System.Drawing.Size(452, 41);
-            this.rtbWinParent.TabIndex = 10;
-            this.rtbWinParent.Text = "";
-            // 
-            // lblWinParentCls
-            // 
-            this.lblWinParentCls.AutoSize = true;
-            this.lblWinParentCls.Location = new System.Drawing.Point(19, 198);
-            this.lblWinParentCls.Name = "lblWinParentCls";
-            this.lblWinParentCls.Size = new System.Drawing.Size(139, 13);
-            this.lblWinParentCls.TabIndex = 9;
-            this.lblWinParentCls.Text = "Window Parent Class Name";
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(224, 61);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(228, 134);
+            this.listBox2.TabIndex = 15;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 324);
+            this.ClientSize = new System.Drawing.Size(471, 204);
+            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.BackendButton);
             this.Controls.Add(this.ConversionTextBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.rtbWinParent);
-            this.Controls.Add(this.lblWinParentCls);
-            this.Controls.Add(this.rtbCaption);
-            this.Controls.Add(this.rtbClassName);
-            this.Controls.Add(this.lblClassName);
-            this.Controls.Add(this.lblHWnd);
-            this.Controls.Add(this.lblWinText);
-            this.Controls.Add(this.lblYPos);
-            this.Controls.Add(this.lblXPos);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
             this.MaximizeBox = false;
@@ -206,16 +136,10 @@
         private System.Windows.Forms.Timer tmrCursorPos;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnStop;
-        private System.Windows.Forms.Label lblXPos;
-        private System.Windows.Forms.Label lblYPos;
-        private System.Windows.Forms.Label lblWinText;
-        private System.Windows.Forms.Label lblHWnd;
-        private System.Windows.Forms.RichTextBox rtbCaption;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox ConversionTextBox;
-        private System.Windows.Forms.RichTextBox rtbClassName;
-        private System.Windows.Forms.Label lblClassName;
-        private System.Windows.Forms.RichTextBox rtbWinParent;
-        private System.Windows.Forms.Label lblWinParentCls;
+        private System.Windows.Forms.Button BackendButton;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox2;
     }
 }
