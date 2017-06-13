@@ -22,16 +22,5 @@ namespace WindowsFormsApp1.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\file.accdb;Jet OLED" +
-            "B:Database Password=123")]
-        public string fileConnectionString {
-            get {
-                return ((string)(this["fileConnectionString"]));
-            }
-        }
     }
 }

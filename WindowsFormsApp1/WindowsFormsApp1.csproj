@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{DE3D2472-4AB2-4DF4-B4E2-390BE11909B0}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>WindowsFormsApp1</RootNamespace>
     <AssemblyName>WindowsFormsApp1</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -33,6 +33,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ABB-Logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -69,6 +72,30 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -76,6 +103,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,6 +124,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="fileDataSet.xsc">
       <DependentUpon>fileDataSet.xsd</DependentUpon>
@@ -97,6 +137,25 @@
     <None Include="fileDataSet.xss">
       <DependentUpon>fileDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\DataOperations.datasource" />
+    <None Include="Properties\DataSources\fileDataSet.datasource" />
+    <None Include="Properties\DataSources\fileDataSet.fileDataTable.datasource" />
+    <None Include="Properties\DataSources\fileDataSet.fileRow.datasource" />
+    <None Include="Properties\DataSources\fileDataSet.fileRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\fileDataSet.fileRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\Form1.POINT.datasource" />
+    <None Include="Properties\DataSources\Form2.datasource" />
+    <None Include="Properties\DataSources\Form3.datasource" />
+    <None Include="Properties\DataSources\Form4.datasource" />
+    <None Include="Properties\DataSources\Form5.datasource" />
+    <None Include="Properties\DataSources\Form6.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApp1.fileDataSetTableAdapters.fileTableAdapter.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApp1.fileDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApp1.fileDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApp1.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApp1.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -113,15 +172,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AccessConnections_cs\AccessConnections_cs.csproj">
-      <Project>{d1625259-8e1c-47e6-b118-aaeb865235da}</Project>
-      <Name>AccessConnections_cs</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="file.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="ABB-Logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

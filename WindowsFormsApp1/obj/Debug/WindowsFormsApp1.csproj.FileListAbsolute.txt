@@ -8,6 +8,7 @@ c:\users\inmagoe1\documents\visual studio 2017\Projects\WindowsFormsApp1\Windows
 c:\users\inmagoe1\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 c:\users\inmagoe1\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\INMAGOE1\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
-C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\AccessConnections_cs.dll
-C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\AccessConnections_cs.pdb
-C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\file.accdb
+C:\Users\INMAGOE1\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form3.resources
+C:\Users\INMAGOE1\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form4.resources
+C:\Users\INMAGOE1\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form5.resources
+C:\Users\INMAGOE1\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form6.resources

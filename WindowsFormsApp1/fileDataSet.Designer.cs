@@ -780,7 +780,6 @@ namespace WindowsFormsApp1.fileDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp1.Properties.Settings.Default.fileConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

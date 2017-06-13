@@ -1,0 +1,428 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <English>File(F)</English>
+    <Arabic>XYZ</Arabic>
+    <German />
+    <Italian />
+    <Japanese>ファイル(F)</Japanese>
+    <Korean />
+    <Norwegian>BNM</Norwegian>
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Project(P)</English>
+    <Arabic>asde</Arabic>
+    <German />
+    <Italian />
+    <Japanese>プロジェクト(P)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Loop(L)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ループ(L)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Node(U)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ノード(U)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Module(M)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>モジュール(M)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Utility(T)</English>
+    <Arabic />
+    <German>Utility</German>
+    <Italian />
+    <Japanese>ユーテイりテイ(T)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Help(H)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ヘルプ(H)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Create New(N)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>新規作成(N)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Open(O)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>開く(O)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Close-C</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>閉じる?</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Auto Start Up(S)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>自動スタートアップ(S)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Show Menu on Run(V)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>起動時にメニューを表示する(V)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Application Exit(X)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>アップリケシャン終了(X)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Add Loop(A)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ループ追加(A)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Add Cabinet Document(D)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>文書キャビネット追加(D)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Compile / Cross reference?</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>コンパイル/クロスりファレンス?</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Configuration List(L)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>コンフィグレーションリスト(L)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Transmit / Receive</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>送信/受信/X</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>xx Tile Search(A)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>xxタイトル検索(A)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>User Library Copy(U)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ユーザライブラリコピー(U)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>User Library(P)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ユーザライブラリ(P)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>User Library Delete ?</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ユーザライブラリ削除(E)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Graphic Name File xx(G)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>グラフィック名ｘファイル再ｘｘ(G)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Project Information(I)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>プロジェクト情報(I)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>File</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ファイル</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Refresh?</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>リフレッシュ(R)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Add Node</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ノード追加(A)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Delete Loop</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ループ削除(D)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Module Run Mode</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>モジュール運転モード(I)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Change Loop Name</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ループ名ｘ変更(N)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Add Module</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>モジュール追加(A)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Import Module</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>インポートモジュール(I)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Delete Node(PCU/HCU)</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ノード(PCU/HCU)削除(D)</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Change Node(PCU/HCU) Name</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>ノード(PCU/HCU)名ｘ変更</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Compile</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>コンパイル</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Cross Reference</English>
+    <Arabic />
+    <German>jhjhjk</German>
+    <Italian />
+    <Japanese>クロスリファレンス</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>GET/PUT Text</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>GET/PUT テキスト</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <English>Cross Reference Manager</English>
+    <Arabic />
+    <German />
+    <Italian />
+    <Japanese>クロスリファレンスマネージャ</Japanese>
+    <Korean />
+    <Norwegian />
+    <Spanish />
+    <Swedish />
+  </Table1>
+  <Table1>
+    <German>sssdf</German>
+  </Table1>
+  <Table1>
+    <Italian>sdsd</Italian>
+    <Japanese>ffsfsd</Japanese>
+  </Table1>
+</NewDataSet>

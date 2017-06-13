@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tmrCursorPos = new System.Windows.Forms.Timer(this.components);
-            this.btnStart = new System.Windows.Forms.Button();
-            this.btnStop = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ConversionTextBox = new System.Windows.Forms.RichTextBox();
-            this.BackendButton = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chooseLanguageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stopReadingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tmrCursorPos
@@ -44,88 +45,73 @@
             this.tmrCursorPos.Interval = 5;
             this.tmrCursorPos.Tick += new System.EventHandler(this.tmrCursorPos_Tick);
             // 
-            // btnStart
+            // menuStrip1
             // 
-            this.btnStart.Location = new System.Drawing.Point(315, 7);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 23);
-            this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem,
+            this.chooseLanguageToolStripMenuItem,
+            this.SettingsToolStripMenuItem,
+            this.startToolStripMenuItem,
+            this.stopReadingToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(369, 24);
+            this.menuStrip1.TabIndex = 14;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnStop
+            // aboutToolStripMenuItem
             // 
-            this.btnStop.Location = new System.Drawing.Point(396, 7);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(75, 23);
-            this.btnStop.TabIndex = 1;
-            this.btnStop.Text = "Stop";
-            this.btnStop.UseVisualStyleBackColor = true;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // label1
+            // chooseLanguageToolStripMenuItem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Text Below the Cursor";
+            this.chooseLanguageToolStripMenuItem.Name = "chooseLanguageToolStripMenuItem";
+            this.chooseLanguageToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.chooseLanguageToolStripMenuItem.Text = "Choose Language";
+            this.chooseLanguageToolStripMenuItem.Click += new System.EventHandler(this.chooseLanguageToolStripMenuItem_Click);
             // 
-            // ConversionTextBox
+            // SettingsToolStripMenuItem
             // 
-            this.ConversionTextBox.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConversionTextBox.Location = new System.Drawing.Point(0, 33);
-            this.ConversionTextBox.Name = "ConversionTextBox";
-            this.ConversionTextBox.ReadOnly = true;
-            this.ConversionTextBox.Size = new System.Drawing.Size(452, 21);
-            this.ConversionTextBox.TabIndex = 12;
-            this.ConversionTextBox.Text = "";
+            this.SettingsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("SettingsToolStripMenuItem.Image")));
+            this.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem";
+            this.SettingsToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.SettingsToolStripMenuItem.Text = "Settings";
+            this.SettingsToolStripMenuItem.Click += new System.EventHandler(this.SettingsToolStripMenuItem_Click);
             // 
-            // BackendButton
+            // startToolStripMenuItem
             // 
-            this.BackendButton.Location = new System.Drawing.Point(200, 7);
-            this.BackendButton.Name = "BackendButton";
-            this.BackendButton.Size = new System.Drawing.Size(109, 23);
-            this.BackendButton.TabIndex = 13;
-            this.BackendButton.Text = "Add Key Value Pair";
-            this.BackendButton.UseVisualStyleBackColor = true;
-            this.BackendButton.Click += new System.EventHandler(this.BackendButton_Click);
+            this.startToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("startToolStripMenuItem.Image")));
+            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
+            this.startToolStripMenuItem.ShowShortcutKeys = false;
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.startToolStripMenuItem.Text = "Start";
+            this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
-            // listBox1
+            // stopReadingToolStripMenuItem
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(0, 61);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(218, 134);
-            this.listBox1.TabIndex = 14;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(224, 61);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(228, 134);
-            this.listBox2.TabIndex = 15;
+            this.stopReadingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("stopReadingToolStripMenuItem.Image")));
+            this.stopReadingToolStripMenuItem.Name = "stopReadingToolStripMenuItem";
+            this.stopReadingToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.stopReadingToolStripMenuItem.Text = "Stop";
+            this.stopReadingToolStripMenuItem.Click += new System.EventHandler(this.stopReadingToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 204);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.BackendButton);
-            this.Controls.Add(this.ConversionTextBox);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnStop);
-            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,12 +120,11 @@
         #endregion
 
         private System.Windows.Forms.Timer tmrCursorPos;
-        private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnStop;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox ConversionTextBox;
-        private System.Windows.Forms.Button BackendButton;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem chooseLanguageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SettingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stopReadingToolStripMenuItem;
     }
 }

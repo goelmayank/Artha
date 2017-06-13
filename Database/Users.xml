@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<Persons>
+  <Person>
+    <EmailId>Mayank.goel@in.abb.com</EmailId>
+    <Password>MTIz</Password>
+    <Privilege>User</Privilege>
+  </Person>
+  <Person>
+    <EmailId>admin@in.abb.com</EmailId>
+    <Password>YWRtaW4=</Password>
+    <Privilege>Admin</Privilege>
+  </Person>
+  <Person>
+    <EmailId>editor@in.abb.com</EmailId>
+    <Password>ZWRpdG9y</Password>
+    <Privilege>Editor</Privilege>
+  </Person>
+</Persons>
