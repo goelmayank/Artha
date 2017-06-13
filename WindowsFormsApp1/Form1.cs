@@ -109,9 +109,16 @@ namespace WindowsFormsApp1
                     //    }
                     //}
 
-                    DataOperations.dictionary["English"] = XDocument.Load(DataOperations.path + "PG1000.xml").Descendants("Table1")
-                                 .ToDictionary(p => (string)p.Element("Japanese").Value,
-                                               p => (string)p.Element("English").Value);
+                    //DataOperations.dictionary["English"] = XDocument.Load(DataOperations.path + "PG1000.xml").Descendants("Table1")
+                    //             .ToDictionary(p => (string)p.Element("Japanese").Value,
+                    //                           p => (string)p.Element("English").Value);
+                    var doc = XDocument.Load(DataOperations.path + "PG1000.xml").Descendants("Table1");
+
+                    DataOperations.dictionary["English"].Clear();
+                    DataOperations.dictionary["English"] = doc.ToDictionary(
+                        p => (string)p.Element("Japanese").Value,
+                        p => (string)p.Element("English").Value
+                    );
                     foreach (KeyValuePair<string, string> kvp in DataOperations.dictionary["English"])
                     {
                         Console.WriteLine(string.Format("Key = {0}, Value = {1}", kvp.Key, kvp.Value));
@@ -151,12 +158,19 @@ namespace WindowsFormsApp1
 
                 if (hwnd.ToInt64() > 0)
                 {
-                    foreach (var tbx in DataOperations.txt)
+                    if (DataOperations.ApplicationJustGotStarted)
                     {
-                        if (tbx != null)
+                        DataOperations.txt[0].Text = GetTextBelowTheCursor("English");
+                    }
+                    else
+                    {
+                        foreach (var tbx in DataOperations.txt)
                         {
-                            TextBox tb = this.Controls.Find(tbx.Name, true).FirstOrDefault() as TextBox;
-                            tb.Text = GetTextBelowTheCursor(tbx.Name);
+                            if (tbx != null)
+                            {
+                                TextBox tb = this.Controls.Find(tbx.Name, true).FirstOrDefault() as TextBox;
+                                tb.Text = GetTextBelowTheCursor(tbx.Name);
+                            }
                         }
                     }
                 }
@@ -166,7 +180,7 @@ namespace WindowsFormsApp1
         {
             Point mouse = Cursor.Position; // use Windows forms mouse code instead of WPF
             AutomationElement element = AutomationElement.FromPoint(new System.Windows.Point(mouse.X, mouse.Y));
-            
+
             if (element == null)
             {
                 // no element under mouse
@@ -196,13 +210,13 @@ namespace WindowsFormsApp1
             tmrCursorPos.Stop();
             tmrCursorPos.Enabled = false;
             this.Hide();
-            Form3 f3 = new Form3(this); 
+            Form3 f3 = new Form3();
             f3.ShowDialog();
         }
         private void SettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form4  f4 = new Form4(this);
+            Form4 f4 = new Form4();
             f4.ShowDialog();
         }
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
@@ -217,4 +231,4 @@ namespace WindowsFormsApp1
         }
 
     }
-}            
+}
