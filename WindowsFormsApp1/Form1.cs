@@ -109,7 +109,7 @@ namespace WindowsFormsApp1
                     //    }
                     //}
 
-                    DataOperations.dictionary["English"] = XDocument.Load(DataOperations.path + "PG1000.xml").Descendants("row")
+                    DataOperations.dictionary["English"] = XDocument.Load(DataOperations.path + "PG1000.xml").Descendants("Table1")
                                  .ToDictionary(p => (string)p.Element("Japanese").Value,
                                                p => (string)p.Element("English").Value);
                     foreach (KeyValuePair<string, string> kvp in DataOperations.dictionary["English"])
@@ -196,13 +196,13 @@ namespace WindowsFormsApp1
             tmrCursorPos.Stop();
             tmrCursorPos.Enabled = false;
             this.Hide();
-            Form3 f3 = new Form3(); 
+            Form3 f3 = new Form3(this); 
             f3.ShowDialog();
         }
         private void SettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form4  f4 = new Form4();
+            Form4  f4 = new Form4(this);
             f4.ShowDialog();
         }
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
