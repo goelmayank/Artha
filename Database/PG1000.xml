@@ -1,428 +1,1674 @@
-<?xml version="1.0" standalone="yes"?>
-<NewDataSet>
-  <Table1>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Row>
+    <Id>0</Id>
     <English>File(F)</English>
-    <Arabic>XYZ</Arabic>
-    <German />
-    <Italian />
+    <Arabic>asdf</Arabic>
+    <German>Datei</German>
+    <Italian>*</Italian>
     <Japanese>ファイル(F)</Japanese>
-    <Korean />
-    <Norwegian>BNM</Norwegian>
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>1</Id>
     <English>Project(P)</English>
-    <Arabic>asde</Arabic>
-    <German />
-    <Italian />
+    <Arabic>dd</Arabic>
+    <German>Projekt</German>
+    <Italian>*</Italian>
     <Japanese>プロジェクト(P)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>2</Id>
     <English>Loop(L)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>sd</Arabic>
+    <German>Schleife</German>
+    <Italian>*</Italian>
     <Japanese>ループ(L)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>3</Id>
     <English>Node(U)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>Nicken</German>
+    <Italian>*</Italian>
     <Japanese>ノード(U)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>4</Id>
     <English>Module(M)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>Modul</German>
+    <Italian>*</Italian>
     <Japanese>モジュール(M)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>5</Id>
     <English>Utility(T)</English>
-    <Arabic />
-    <German>Utility</German>
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>Dienstprogramm</German>
+    <Italian>*</Italian>
     <Japanese>ユーテイりテイ(T)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>6</Id>
     <English>Help(H)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>Hilfe</German>
+    <Italian>*</Italian>
     <Japanese>ヘルプ(H)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>7</Id>
     <English>Create New(N)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>Erstelle Neu</German>
+    <Italian>*</Italian>
     <Japanese>新規作成(N)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>8</Id>
     <English>Open(O)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>Öffnen</German>
+    <Italian>*</Italian>
     <Japanese>開く(O)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
-    <English>Close-C</English>
-    <Arabic />
-    <German />
-    <Italian />
-    <Japanese>閉じる?</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>9</Id>
+    <English>Close©</English>
+    <Arabic>*</Arabic>
+    <German>Schließen</German>
+    <Italian>*</Italian>
+    <Japanese>閉じる©</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>10</Id>
     <English>Auto Start Up(S)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>Automatische Inbetriebnahme</German>
+    <Italian>*</Italian>
     <Japanese>自動スタートアップ(S)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>11</Id>
     <English>Show Menu on Run(V)</English>
-    <Arabic />
-    <German />
-    <Italian />
-    <Japanese>起動時にメニューを表示する(V)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Arabic>*</Arabic>
+    <German>Menü auf Ausführen anzeigen</German>
+    <Italian>*</Italian>
+    <Japanese>起動時にメインメニューを表示する(V)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>12</Id>
     <English>Application Exit(X)</English>
-    <Arabic />
-    <German />
-    <Italian />
-    <Japanese>アップリケシャン終了(X)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Arabic>*</Arabic>
+    <German>Anwendung</German>
+    <Italian>*</Italian>
+    <Japanese>アップリケション終了(X)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>13</Id>
     <English>Add Loop(A)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>Loop hinzufügen</German>
+    <Italian>*</Italian>
     <Japanese>ループ追加(A)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>14</Id>
     <English>Add Cabinet Document(D)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>Kabinettdokument hinzufügen</German>
+    <Italian>*</Italian>
     <Japanese>文書キャビネット追加(D)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
-    <English>Compile / Cross reference?</English>
-    <Arabic />
-    <German />
-    <Italian />
-    <Japanese>コンパイル/クロスりファレンス?</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>15</Id>
+    <English>Compile / Cross reference©</English>
+    <Arabic>*</Arabic>
+    <German>Kompilieren / </German>
+    <Italian>*</Italian>
+    <Japanese>コンパイル/クロスりファレンス©</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>16</Id>
     <English>Configuration List(L)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>Querverweis</German>
+    <Italian>*</Italian>
     <Japanese>コンフィグレーションリスト(L)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
-    <English>Transmit / Receive</English>
-    <Arabic />
-    <German />
-    <Italian />
-    <Japanese>送信/受信/X</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
-    <English>xx Tile Search(A)</English>
-    <Arabic />
-    <German />
-    <Italian />
-    <Japanese>xxタイトル検索(A)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>17</Id>
+    <English>Transmit / Receive / Verfication</English>
+    <Arabic>*</Arabic>
+    <German>Übertragen / Erhalten / Überprüfung</German>
+    <Italian>*</Italian>
+    <Japanese>送信/受信/照合</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>18</Id>
+    <English>Diagram Tile Search(A)</English>
+    <Arabic>*</Arabic>
+    <German>Diagramm Titel Suche</German>
+    <Italian>*</Italian>
+    <Japanese>図面タイトル検索(A)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>19</Id>
     <English>User Library Copy(U)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>ユーザライブラリコピー(U)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>20</Id>
     <English>User Library(P)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>ユーザライブラリ(P)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
-    <English>User Library Delete ?</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>21</Id>
+    <English>User Library Delete €</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>ユーザライブラリ削除(E)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
-    <English>Graphic Name File xx(G)</English>
-    <Arabic />
-    <German />
-    <Italian />
-    <Japanese>グラフィック名ｘファイル再ｘｘ(G)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>22</Id>
+    <English>Graphic Name File Name(G)</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>グラフィック名ｘファイル再名称(G)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>23</Id>
     <English>Project Information(I)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>プロジェクト情報(I)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>24</Id>
     <English>File</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>ファイル</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
-    <English>Refresh?</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>25</Id>
+    <English>Refresh®</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>リフレッシュ(R)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>26</Id>
     <English>Add Node</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>ノード追加(A)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>27</Id>
     <English>Delete Loop</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>ループ削除(D)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>28</Id>
     <English>Module Run Mode</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>モジュール運転モード(I)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>29</Id>
     <English>Change Loop Name</English>
-    <Arabic />
-    <German />
-    <Italian />
-    <Japanese>ループ名ｘ変更(N)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>ループ名名称変更(N)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>30</Id>
     <English>Add Module</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>モジュール追加(A)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>31</Id>
     <English>Import Module</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>インポートモジュール(I)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>32</Id>
     <English>Delete Node(PCU/HCU)</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>ノード(PCU/HCU)削除(D)</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>33</Id>
     <English>Change Node(PCU/HCU) Name</English>
-    <Arabic />
-    <German />
-    <Italian />
-    <Japanese>ノード(PCU/HCU)名ｘ変更</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>ノード(PCU/HCU)名称変更</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>34</Id>
     <English>Compile</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>コンパイル</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>35</Id>
     <English>Cross Reference</English>
-    <Arabic />
-    <German>jhjhjk</German>
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>クロスリファレンス</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>36</Id>
     <English>GET/PUT Text</English>
-    <Arabic />
-    <German />
-    <Italian />
-    <Japanese>GET/PUT テキスト</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>GET/PUTテキスト</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>37</Id>
     <English>Cross Reference Manager</English>
-    <Arabic />
-    <German />
-    <Italian />
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
     <Japanese>クロスリファレンスマネージャ</Japanese>
-    <Korean />
-    <Norwegian />
-    <Spanish />
-    <Swedish />
-  </Table1>
-  <Table1>
-    <German>sssdf</German>
-  </Table1>
-  <Table1>
-    <Italian>sdsd</Italian>
-    <Japanese>ffsfsd</Japanese>
-  </Table1>
-</NewDataSet>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>38</Id>
+    <English>List Check</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>リストチェック®</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>39</Id>
+    <English>Block Search</English>
+    <Arabic>*</Arabic>
+    <German>Blocksuche</German>
+    <Japanese>ブロック検索(B)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>40</Id>
+    <English>Log File Display</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>ログファイル表示</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>41</Id>
+    <English>Program Call Set Up</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>プログラム呼出設定</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>42</Id>
+    <English>Sheet Display Switch</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>シート表示切替</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>43</Id>
+    <English>High Spec Trend</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>ハイスペックトレンド</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>44</Id>
+    <English>Tag Setting</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>タグ設定</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>45</Id>
+    <English>Topic Search</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>トピック検索</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>46</Id>
+    <English>Version Information</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>バーション情報(A)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>47</Id>
+    <English>Module Id + Sheet Number</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>モジュールId＋シート番号</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>48</Id>
+    <English>Development &amp; Display</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>作成&amp;表示</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>49</Id>
+    <English>Display</English>
+    <Arabic>*</Arabic>
+    <German>Anzeigen</German>
+    <Japanese>表示</Japanese>
+  </Row>
+  <Row>
+    <Id>50</Id>
+    <English>Transmit</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>送信</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>51</Id>
+    <English>Receive</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>受信</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>52</Id>
+    <English>Verification</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>照合</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>53</Id>
+    <English>Add PCU</English>
+    <Arabic>*</Arabic>
+    <German>PCU hinzufügen</German>
+    <Italian>*</Italian>
+    <Japanese>PCU追加(A)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>54</Id>
+    <English>Add HCU</English>
+    <Arabic>*</Arabic>
+    <German>HCU hinzufügen</German>
+    <Italian>*</Italian>
+    <Japanese>HCU追加(H)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>55</Id>
+    <English>Levelling</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>ラベリング</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>56</Id>
+    <English>CAD File Name</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>CADファイル名</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>57</Id>
+    <English>Online</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>オンライン(T)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>58</Id>
+    <English>Trend</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>トレンド(A)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>59</Id>
+    <English>High Spec Trend Playback</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>ハイスペックトレンド再生</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>60</Id>
+    <English>XX List</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>XX一覧</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>61</Id>
+    <English>Monitor</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>モニター</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>62</Id>
+    <English>TrendXX</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>トレンドXX</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>63</Id>
+    <English>Curve Display</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>カーブ表示</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>64</Id>
+    <English>Module Check</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>モジュールチェック</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>65</Id>
+    <English>Value Monitor</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>装置モニター</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>66</Id>
+    <English>Module Run Mode</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>モジュール運転モード</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>67</Id>
+    <English>Sheet</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>シート</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>68</Id>
+    <English>Size</English>
+    <Arabic>*</Arabic>
+    <German>Größe</German>
+    <Italian>*</Italian>
+    <Japanese>サイズ</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>69</Id>
+    <English>Save XX</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>保守ｘｘ</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>70</Id>
+    <English>Overwrite &amp; Save</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>上書き保存(S)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>71</Id>
+    <English>Property</English>
+    <Arabic>*</Arabic>
+    <German>Eigentum</German>
+    <Italian>*</Italian>
+    <Japanese>プロパティ </Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>72</Id>
+    <English>Open Previous Sheet</English>
+    <Arabic>*</Arabic>
+    <German>Vorheriges Blatt öffnen</German>
+    <Italian>*</Italian>
+    <Japanese>前シートを開く</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>73</Id>
+    <English>Open Next Sheet</English>
+    <Arabic>*</Arabic>
+    <German>Nächstes Blatt öffnen</German>
+    <Italian>*</Italian>
+    <Japanese>後シートを開く</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>74</Id>
+    <English>Print</English>
+    <Arabic>*</Arabic>
+    <German>Drucken</German>
+    <Italian>*</Italian>
+    <Japanese>印刷(P)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>75</Id>
+    <English>Print Preview</English>
+    <Arabic>*</Arabic>
+    <German>Druckvorschau</German>
+    <Italian>*</Italian>
+    <Japanese>印刷プリビュ(V)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>76</Id>
+    <English>Printer Setup</English>
+    <Arabic>*</Arabic>
+    <German>Druckereinstellungen</German>
+    <Italian>*</Italian>
+    <Japanese>プリンター設定®</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>77</Id>
+    <English>Edit</English>
+    <Arabic>*</Arabic>
+    <German>Bearbeiten</German>
+    <Italian>*</Italian>
+    <Japanese>編集€</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>78</Id>
+    <English>Display</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>表示</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>79</Id>
+    <English>Function</English>
+    <Arabic>*</Arabic>
+    <German>Funktion</German>
+    <Italian>*</Italian>
+    <Japanese>ファンクション(u)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>80</Id>
+    <English>Tools</English>
+    <Arabic>*</Arabic>
+    <German>Werkzeuge</German>
+    <Italian>*</Italian>
+    <Japanese>ツール(T)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>81</Id>
+    <English>Library</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>ライブラリ(L)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>82</Id>
+    <English>Window</English>
+    <Arabic>*</Arabic>
+    <German>Schaufenster</German>
+    <Italian>*</Italian>
+    <Japanese>ウィンドウ(W)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>83</Id>
+    <English>Select All</English>
+    <Arabic>*</Arabic>
+    <German>Alles auswählen</German>
+    <Italian>*</Italian>
+    <Japanese>すべてを選択(A)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>84</Id>
+    <English>Selection</English>
+    <Arabic>*</Arabic>
+    <German>Auswahl</German>
+    <Italian>*</Italian>
+    <Japanese>選択(B)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>85</Id>
+    <English>Block</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>ブロック</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>86</Id>
+    <English>Color</English>
+    <Arabic>*</Arabic>
+    <German>Farbe</German>
+    <Italian>*</Italian>
+    <Japanese>色</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>87</Id>
+    <English>Layer</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>レイヤ</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>88</Id>
+    <English>Open Next Link</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>リンク先を開く</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>89</Id>
+    <English>Sheet Revision</English>
+    <Arabic>*</Arabic>
+    <German>Blattrevision</German>
+    <Italian>*</Italian>
+    <Japanese>シートの改訂(T)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>90</Id>
+    <English>Open Designated Sheet</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>指定シートを開く</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>91</Id>
+    <English>Open Cross Reference Sheet</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>クロスリファレンスシートを開く</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>92</Id>
+    <English>Return Back</English>
+    <Arabic>*</Arabic>
+    <German>Return Zurück</German>
+    <Italian>*</Italian>
+    <Japanese>元に戻す(U)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>93</Id>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>やりXX®</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>94</Id>
+    <English>Previous</English>
+    <Arabic>*</Arabic>
+    <German>Bisherige</German>
+    <Italian>*</Italian>
+    <Japanese>前の(P)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>95</Id>
+    <English>Next</English>
+    <Arabic>*</Arabic>
+    <German>Nächster</German>
+    <Italian>*</Italian>
+    <Japanese>次の(N)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>96</Id>
+    <English>Rotate</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>回転(O)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>97</Id>
+    <English>Substitute</English>
+    <Arabic>*</Arabic>
+    <German>Ersatz</German>
+    <Italian>*</Italian>
+    <Japanese>置換(F)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>98</Id>
+    <English>Cut</English>
+    <Arabic>*</Arabic>
+    <German>SchneIden</German>
+    <Italian>*</Italian>
+    <Japanese>切り取り</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>99</Id>
+    <English>Delete</English>
+    <Arabic>*</Arabic>
+    <German>Löschen</German>
+    <Italian>*</Italian>
+    <Japanese>削除</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>100</Id>
+    <English>Confirm Layer</English>
+    <Arabic>*</Arabic>
+    <German>Ebene bestätigen</German>
+    <Italian>*</Italian>
+    <Japanese>レイヤの確認</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>101</Id>
+    <English>Status Bar</English>
+    <Arabic>*</Arabic>
+    <German>Statusleiste</German>
+    <Italian>*</Italian>
+    <Japanese>ステータスバー</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>102</Id>
+    <English>Option</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>オプション</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>103</Id>
+    <English>CAD Monitor</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>CADモニター(O)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>104</Id>
+    <English>GMC Tool Bar</English>
+    <Arabic>*</Arabic>
+    <German>GMC Werkzeugleiste </German>
+    <Italian>*</Italian>
+    <Japanese>GMCツールバー(G)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>105</Id>
+    <English>Geometry Tool Bar</English>
+    <Arabic>*</Arabic>
+    <German>Geometrie Werkzeugleiste </German>
+    <Italian>*</Italian>
+    <Japanese>図形ツールバー(D)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>106</Id>
+    <English>Basic Tool Bar</English>
+    <Arabic>*</Arabic>
+    <German>Grundwerkzeugleiste </German>
+    <Italian>*</Italian>
+    <Japanese>基本ツールバー(F)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>107</Id>
+    <English>Display Window Size</English>
+    <Arabic>*</Arabic>
+    <German>Display-Fenstergröße</German>
+    <Italian>*</Italian>
+    <Japanese>ウィンドウサイズの表示(W)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>108</Id>
+    <English>Probe</English>
+    <Arabic>*</Arabic>
+    <German>Sonde</German>
+    <Italian>*</Italian>
+    <Japanese>プローブ</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>109</Id>
+    <English>Modify Color</English>
+    <Arabic>*</Arabic>
+    <German>Farbe ändern</German>
+    <Italian>*</Italian>
+    <Japanese>色の変更</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>110</Id>
+    <English>Modify Layer</English>
+    <Arabic>*</Arabic>
+    <German>Layer ändern</German>
+    <Italian>*</Italian>
+    <Japanese>レイヤの変更</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>111</Id>
+    <English>Modify Font Size</English>
+    <Arabic>*</Arabic>
+    <German>Schriftgröße ändern</German>
+    <Italian>*</Italian>
+    <Japanese>文字サイズの変更</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>112</Id>
+    <English>Modify I/O List</English>
+    <Arabic>*</Arabic>
+    <German>IO-Liste ändern</German>
+    <Italian>*</Italian>
+    <Japanese>I/Oリスト変更</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>113</Id>
+    <English>SpecXX</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>スペックXX</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>114</Id>
+    <English>HMI Engineering</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>HMIエンジ二ヤリング</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>115</Id>
+    <English>Macro I/O Ref</English>
+    <Arabic>*</Arabic>
+    <German>Makro I / O Ref</German>
+    <Italian>*</Italian>
+    <Japanese>マクロI/ORef</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>116</Id>
+    <English>Macro</English>
+    <Arabic>*</Arabic>
+    <German>Makro</German>
+    <Italian>*</Italian>
+    <Japanese>マクロ</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>117</Id>
+    <English>Connector</English>
+    <Arabic>*</Arabic>
+    <German>Steckverbinder</German>
+    <Italian>*</Italian>
+    <Japanese>コネクター</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>118</Id>
+    <English>Reference Connector</English>
+    <Arabic>*</Arabic>
+    <German>Referenzstecker</German>
+    <Italian>*</Italian>
+    <Japanese>リファレンスコネクター</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>119</Id>
+    <English>User Shape</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>ユーザシェイプ</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>120</Id>
+    <English>Border</English>
+    <Arabic>*</Arabic>
+    <German>Rand</German>
+    <Italian>*</Italian>
+    <Japanese>ボーダ</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>121</Id>
+    <English>Function Code</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>ファンクションコード</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>122</Id>
+    <English>Line</English>
+    <Arabic>*</Arabic>
+    <German>Linie</German>
+    <Italian>*</Italian>
+    <Japanese>線</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>123</Id>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>手のひら</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>124</Id>
+    <English>Create User Shape</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>ユーザシェイプの作成</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>125</Id>
+    <English>Create Border</English>
+    <Arabic>*</Arabic>
+    <German>Grenze erstellen</German>
+    <Italian>*</Italian>
+    <Japanese>ボーダ作成</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>126</Id>
+    <English>Create Macro</English>
+    <Arabic>*</Arabic>
+    <German>Makro erstellen</German>
+    <Italian>*</Italian>
+    <Japanese>マクロ作成</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>127</Id>
+    <English>Create Macro Reference</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>マクロリファレンス作成</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>128</Id>
+    <English>Compile Sheet</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>シートコンパイル</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>129</Id>
+    <English>Display Macro Internal Logic</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>マクロ内部ロジック表示</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>130</Id>
+    <English>Delete User Library</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>ユーザシェイプの削除</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>131</Id>
+    <English>Macro Library Information</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>マクロライブラリ情報</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>132</Id>
+    <English>Arranged View</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>並べって表示</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>133</Id>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>アイコンのXX</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>134</Id>
+    <English>Signal Line</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>信号線</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>135</Id>
+    <English>Reference Manager</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>リファレンスマネージャ</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>136</Id>
+    <English>Transmit Tag Writing</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>伝送タグ書込み</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>137</Id>
+    <English>Develop &amp; Display</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>作成＆表示</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>138</Id>
+    <English>This PCU Internal Module</English>
+    <Arabic>dsd</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>このPCU内モジュール</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>139</Id>
+    <English>Registration Module Only</English>
+    <Arabic>*</Arabic>
+    <German>*</German>
+    <Italian>*</Italian>
+    <Japanese>登録モジュールのみ</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*</Swedish>
+  </Row>
+</Root>

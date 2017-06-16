@@ -2,7 +2,7 @@
 
 namespace WindowsFormsApp1
 {
-    partial class Form3
+    partial class ChooseLanguage
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChooseLanguage));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,8 +82,8 @@ namespace WindowsFormsApp1
             // 
             this.homeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("homeToolStripMenuItem.Image")));
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
-            this.homeToolStripMenuItem.Text = "Save and Return";
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.homeToolStripMenuItem.Text = "Save";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // groupBox1
@@ -114,7 +114,6 @@ namespace WindowsFormsApp1
             this.radioButton9.TabStop = true;
             this.radioButton9.Text = "Swedish";
             this.radioButton9.UseVisualStyleBackColor = true;
-            
             // 
             // radioButton8
             // 
@@ -126,7 +125,6 @@ namespace WindowsFormsApp1
             this.radioButton8.TabStop = true;
             this.radioButton8.Text = "Spanish";
             this.radioButton8.UseVisualStyleBackColor = true;
-            
             // 
             // radioButton7
             // 
@@ -138,7 +136,6 @@ namespace WindowsFormsApp1
             this.radioButton7.TabStop = true;
             this.radioButton7.Text = "Norwegian";
             this.radioButton7.UseVisualStyleBackColor = true;
-            
             // 
             // radioButton6
             // 
@@ -150,7 +147,6 @@ namespace WindowsFormsApp1
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Korean";
             this.radioButton6.UseVisualStyleBackColor = true;
-            
             // 
             // radioButton5
             // 
@@ -162,7 +158,6 @@ namespace WindowsFormsApp1
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Japanese";
             this.radioButton5.UseVisualStyleBackColor = true;
-            
             // 
             // radioButton4
             // 
@@ -174,7 +169,6 @@ namespace WindowsFormsApp1
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Italian";
             this.radioButton4.UseVisualStyleBackColor = true;
-            
             // 
             // radioButton3
             // 
@@ -186,7 +180,6 @@ namespace WindowsFormsApp1
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "German";
             this.radioButton3.UseVisualStyleBackColor = true;
-            
             // 
             // radioButton2
             // 
@@ -198,7 +191,6 @@ namespace WindowsFormsApp1
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Arabic";
             this.radioButton2.UseVisualStyleBackColor = true;
-            
             // 
             // radioButton1
             // 
@@ -210,7 +202,6 @@ namespace WindowsFormsApp1
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "English";
             this.radioButton1.UseVisualStyleBackColor = true;
-           
             // 
             // groupBox2
             // 
@@ -341,7 +332,7 @@ namespace WindowsFormsApp1
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
-            // Form3
+            // ChooseLanguage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -351,10 +342,13 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form3";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "ChooseLanguage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "ChooseLanguage";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

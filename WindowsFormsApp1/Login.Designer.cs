@@ -2,7 +2,7 @@
 
 namespace WindowsFormsApp1
 {
-    partial class Form4
+    partial class Login
     {
         /// <summary> 
         /// Required designer variable. 
@@ -31,10 +31,9 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.tmrCursorPos = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +47,6 @@ namespace WindowsFormsApp1
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.homeToolStripMenuItem,
             this.aboutToolStripMenuItem,
             this.registerToolStripMenuItem,
             this.loginToolStripMenuItem});
@@ -58,18 +56,12 @@ namespace WindowsFormsApp1
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // homeToolStripMenuItem
-            // 
-            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.homeToolStripMenuItem.Text = "Home";
-            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
-            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Text = "&About";
             // 
             // registerToolStripMenuItem
             // 
@@ -92,8 +84,9 @@ namespace WindowsFormsApp1
             this.tbPassword.Location = new System.Drawing.Point(12, 83);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
-            this.tbPassword.Size = new System.Drawing.Size(311, 20);
+            this.tbPassword.Size = new System.Drawing.Size(300, 20);
             this.tbPassword.TabIndex = 21;
+            this.tbPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbPassword_KeyDown);
             // 
             // label2
             // 
@@ -108,8 +101,9 @@ namespace WindowsFormsApp1
             // 
             this.tbEmailId.Location = new System.Drawing.Point(13, 43);
             this.tbEmailId.Name = "tbEmailId";
-            this.tbEmailId.Size = new System.Drawing.Size(311, 20);
+            this.tbEmailId.Size = new System.Drawing.Size(299, 20);
             this.tbEmailId.TabIndex = 19;
+            this.tbEmailId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbEmailId_KeyDown);
             // 
             // label1
             // 
@@ -120,11 +114,11 @@ namespace WindowsFormsApp1
             this.label1.TabIndex = 18;
             this.label1.Text = "Email Id";
             // 
-            // Form4
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 105);
+            this.ClientSize = new System.Drawing.Size(324, 111);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbEmailId);
@@ -132,8 +126,8 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form4";
-            this.Text = "Form4";
+            this.Name = "Login";
+            this.Text = "Login";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form4_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -147,7 +141,6 @@ namespace WindowsFormsApp1
 
         private System.Windows.Forms.Timer tmrCursorPos;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;

@@ -1,19 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form3 : Form
+    public partial class ChooseLanguage : Form
     {
-        public Form3()
+        public ChooseLanguage()
         {
             InitializeComponent();
         }
@@ -42,10 +39,13 @@ namespace WindowsFormsApp1
             
             DataOperations.FromLanguage = checkedButton.Text;
             DataOperations.ApplicationJustGotStarted = false;
-            var doc = XDocument.Load(DataOperations.path + "PG1000.xml").Descendants("Table1");
-            int i= 0, height = 25;
+            var doc = XDocument.Load(DataOperations.path + "PG1000.xml").Descendants("Row");
+            int i= 0, height = 13;
             Array.Clear(DataOperations.txt, 0, DataOperations.txt.Length);
             Array.Clear(DataOperations.lbl, 0, DataOperations.lbl.Length);
+            string Message="User " + DataOperations.EmailId + " chose language conversion from " + checkedButton.Text + " to ";
+            List<DataOperations.TargetVal> targets;
+            DataOperations.TargetVal target;
             foreach (var ctrl in groupBox2.Controls.OfType<CheckBox>().Where(x => x.Checked))
             {
                 DataOperations.txt[i] = new TextBox();
@@ -59,20 +59,50 @@ namespace WindowsFormsApp1
                 DataOperations.txt[i].Text = "";
 
                 DataOperations.lbl[i].AutoSize = true;
-                DataOperations.lbl[i].Location = new Point(0, height);
+                DataOperations.lbl[i].Location = new Point(12, height+3);
                 DataOperations.lbl[i].Name = "label_" + ctrl.Text;
                 DataOperations.lbl[i].Size = new Size(58, 13);
                 DataOperations.lbl[i].Text = ctrl.Text;
                 try
+
                 {
-                    DataOperations.dictionary[ctrl.Text].Clear();
-                    DataOperations.dictionary[ctrl.Text] = doc.ToDictionary(
-                        p => (string)p.Element(checkedButton.Text).Value,
-                        p => (string)p.Element(ctrl.Text).Value
-                    );
-                    foreach (KeyValuePair<string, string> kvp in DataOperations.dictionary[ctrl.Text])
+                    //DataOperations.dictionary[ctrl.Text].Clear();
+                    //DataOperations.dictionary[ctrl.Text] = doc.ToDictionary(
+                    //    p => (string)p.Element(checkedButton.Text).Value,
+                    //    p => (string)p.Element(ctrl.Text).Value
+                    //);
+
+
+
+                    //DataOperations.dictionary[ctrl.Text] = doc.Select(p => (new DataOperations.TargetVal()
+                    //{
+                    //    srcLan = (string)p.Element(checkedButton.Text).Value,
+                    //    trgLan = (string)p.Element(ctrl.Text).Value
+                    //})).ToList();
+
+                    //try
+                    //{
+
+                    //}
+                    //catch (Exception)
+                    //{
+
+                    //    throw;
+                    //}
+
+                    targets = new List<DataOperations.TargetVal>();
+                    foreach (var item in doc)
                     {
-                        Console.WriteLine(string.Format("Key = {0}, Value = {1}", kvp.Key, kvp.Value));
+                        target = new DataOperations.TargetVal()
+                        { srcLan = item.Element(checkedButton.Text) == null ? string.Empty : item.Element(checkedButton.Text).Value,
+                            trgLan = item.Element(ctrl.Text) == null ? string.Empty : item.Element(ctrl.Text).Value };
+                        targets.Add(target);
+                    }
+                    DataOperations.dictionary[ctrl.Text] = targets;
+                    Message += ctrl.Text + ", ";
+                    foreach (DataOperations.TargetVal kvp in DataOperations.dictionary[ctrl.Text])
+                    {
+                        Console.WriteLine(string.Format("Key = {0}, Value = {1}", kvp.srcLan, kvp.trgLan));
                     }
                 }
                 catch (Exception ex)
@@ -81,13 +111,19 @@ namespace WindowsFormsApp1
                 }
                 i++; height += 27;
             }
-            
+            obj.log(Message);
             DataOperations.ClientSize = height + 10;
             this.Hide();
-            Form1 f1 = new Form1();
-            f1.ShowDialog();
+            MainForm f2 = new MainForm();
+            f2.FormClosed += F2_FormClosed;
+            f2.ShowDialog();
         }
-        
+
+        private void F2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+        }
+
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This sample is developed by Mayank Goel, Intern, ABB Pvt. Ltd. Core. Please read the Readme.htm for more details");
@@ -152,5 +188,6 @@ namespace WindowsFormsApp1
             checkBox8.CheckState = CheckState.Checked;
             checkBox9.CheckState = CheckState.Checked;
         }
+
     }
 }

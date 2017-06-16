@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form5
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.tbRepeatPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tbPassword = new System.Windows.Forms.TextBox();
@@ -36,7 +36,6 @@
             this.tbEmailId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,16 +44,17 @@
             // 
             // tbRepeatPassword
             // 
-            this.tbRepeatPassword.Location = new System.Drawing.Point(2, 123);
+            this.tbRepeatPassword.Location = new System.Drawing.Point(12, 123);
             this.tbRepeatPassword.Name = "tbRepeatPassword";
             this.tbRepeatPassword.PasswordChar = '*';
-            this.tbRepeatPassword.Size = new System.Drawing.Size(311, 20);
-            this.tbRepeatPassword.TabIndex = 11;
+            this.tbRepeatPassword.Size = new System.Drawing.Size(289, 20);
+            this.tbRepeatPassword.TabIndex = 15;
+            this.tbRepeatPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbRepeatPassword_KeyDown);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(-1, 106);
+            this.label3.Location = new System.Drawing.Point(12, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 13);
             this.label3.TabIndex = 10;
@@ -62,16 +62,17 @@
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(2, 86);
+            this.tbPassword.Location = new System.Drawing.Point(12, 86);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
-            this.tbPassword.Size = new System.Drawing.Size(311, 20);
-            this.tbPassword.TabIndex = 15;
+            this.tbPassword.Size = new System.Drawing.Size(289, 20);
+            this.tbPassword.TabIndex = 13;
+            this.tbPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbPassword_KeyDown);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(-1, 70);
+            this.label2.Location = new System.Drawing.Point(12, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 14;
@@ -79,15 +80,16 @@
             // 
             // tbEmailId
             // 
-            this.tbEmailId.Location = new System.Drawing.Point(3, 47);
+            this.tbEmailId.Location = new System.Drawing.Point(12, 47);
             this.tbEmailId.Name = "tbEmailId";
-            this.tbEmailId.Size = new System.Drawing.Size(311, 20);
-            this.tbEmailId.TabIndex = 13;
+            this.tbEmailId.Size = new System.Drawing.Size(289, 20);
+            this.tbEmailId.TabIndex = 11;
+            this.tbEmailId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbEmailId_KeyDown);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 30);
+            this.label1.Location = new System.Drawing.Point(12, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 12;
@@ -96,7 +98,6 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.homeToolStripMenuItem,
             this.aboutToolStripMenuItem,
             this.registerToolStripMenuItem,
             this.loginToolStripMenuItem});
@@ -105,13 +106,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(313, 24);
             this.menuStrip1.TabIndex = 18;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // homeToolStripMenuItem
-            // 
-            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.homeToolStripMenuItem.Text = "Home";
-            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -136,7 +130,7 @@
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
-            // Form5
+            // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,9 +142,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbRepeatPassword);
             this.Controls.Add(this.label3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form5";
-            this.Text = "Form5";
+            this.Name = "Register";
+            this.Text = "Register";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -167,7 +162,6 @@
         private System.Windows.Forms.TextBox tbEmailId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
