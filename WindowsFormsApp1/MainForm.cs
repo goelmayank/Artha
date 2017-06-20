@@ -45,65 +45,44 @@ namespace WindowsFormsApp1
         static extern bool GetCursorPos(ref POINT p);
 
         POINT p;
-
+        DataOperations obj = new DataOperations();
         public MainForm()
         {
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            //if (DataOperations.ApplicationJustGotStarted)
-            //{
-            //    DataOperations.txt[0] = new TextBox();
-            //    DataOperations.txt[0].Font = new Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
-            //    DataOperations.txt[0].Location = new Point(78, 13);
-            //    DataOperations.txt[0].Name = "Japanese";
-            //    DataOperations.txt[0].ReadOnly = true;
-            //    DataOperations.txt[0].Size = new Size(182, 21);
-            //    DataOperations.txt[0].Text = "";
-
-            //    DataOperations.lbl[0] = new Label();
-            //    DataOperations.lbl[0].AutoSize = true;
-            //    DataOperations.lbl[0].Location = new Point(12,16);
-            //    DataOperations.lbl[0].Name = "label_English";
-            //    DataOperations.lbl[0].Size = new Size(58, 13);
-            //    DataOperations.lbl[0].Text = "English";
-
-            //    this.Controls.Add(DataOperations.txt[0]);
-            //    this.Controls.Add(DataOperations.lbl[0]);
-            //    this.ClientSize = new Size(369, 50);
-
-            //    Encoding enc = new UTF32Encoding(false, true, true);
-            //    try
-            //    {
-            //        DataOperations.dictionary["English"].Clear();
-
-            //        var doc = XDocument.Load(DataOperations.path + "PG1000.xml").Descendants("Row");
-
-            //        DataOperations.dictionary["English"].Clear();
-            //        DataOperations.dictionary["English"] = doc.ToDictionary(
-            //            p => (string)p.Element("Japanese").Value,
-            //            p => (string)p.Element("English").Value
-            //        );
-            //        //foreach (KeyValuePair<string, string> kvp in DataOperations.dictionary["English"])
-            //        //{
-            //        //    Console.WriteLine(string.Format("Key = {0}, Value = {1}", kvp.Key, kvp.Value));
-            //        //}
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show(ex.Message);
-            //    }
-            //}
-            //else
+            if ( obj.getPrivilege(DataOperations.EmailId) == "Admin" )
             {
-                for (int i = 0; i < DataOperations.txt.Length; i++)
+                this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+                this.aboutToolStripMenuItem.Size = new Size(52, 20);
+                this.aboutToolStripMenuItem.Text = "About";
+                this.aboutToolStripMenuItem.Click += new EventHandler(this.aboutToolStripMenuItem_Click_1);
+               
+                this.returnToConvewrsionTableToolStripMenuItem.Name = "returnToConvewrsionTableToolStripMenuItem";
+                this.returnToConvewrsionTableToolStripMenuItem.Size = new Size(179, 20);
+                this.returnToConvewrsionTableToolStripMenuItem.Text = "Return to Conversion Table";
+                this.returnToConvewrsionTableToolStripMenuItem.Click += new EventHandler(this.returnToConvewrsionTableToolStripMenuItem_Click);
+
+                this.menuStrip1.Items.AddRange(new ToolStripItem[] {
+                this.aboutToolStripMenuItem,
+                this.returnToConvewrsionTableToolStripMenuItem});
+                this.menuStrip1.Location = new Point(0, 0);
+                this.menuStrip1.Name = "menuStrip1";
+                this.menuStrip1.Size = new Size(375, 24);
+                this.menuStrip1.TabIndex = 0;
+                this.menuStrip1.Text = "menuStrip1";
+
+                this.Controls.Add(this.menuStrip1);
+            }
+
+            for (int i = 0; i < DataOperations.txt.Length; i++)
                 {
                     this.Controls.Add(DataOperations.txt[i]);
                     this.Controls.Add(DataOperations.lbl[i]);
                 }
-                this.ClientSize = new Size(369, DataOperations.ClientSize);
-            }
+            this.ClientSize = new Size(369, DataOperations.ClientSize);
+            
             tmrCursorPos.Enabled = true;
             tmrCursorPos.Start();
         }
@@ -155,14 +134,27 @@ namespace WindowsFormsApp1
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                Console.WriteLine(ex.Message);
             }
             return "";
 
         }
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void aboutToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("This sample is developed by Mayank Goel, Intern, ABB Pvt. Ltd. Core. Please read the Readme.htm for more details");
+        }
+
+        private void returnToConvewrsionTableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ConversionTable f2 = new ConversionTable();
+            f2.FormClosed += F2_FormClosed;
+            f2.ShowDialog();
+        }
+        private void F2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
         }
         //private void chooseLanguageToolStripMenuItem_Click(object sender, EventArgs e)
         //{

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
@@ -53,25 +46,6 @@ namespace WindowsFormsApp1
                                 " added to Users Privilege Table" +
                                 i.ToString() + " users");
                 MessageBox.Show("Saved successfully");
-                //foreach (DataGridViewRow item in dataGridView1.Rows)
-                //{
-                //    if (item.Index == dataGridView1.Rows.Count - 1) break;
-                //    doc.Descendants("Persons").FirstOrDefault().Add(new XElement("Person",
-                //        new XElement("Id", (++oldRowCount).ToString()),
-                //        new XElement("EmailId", (item.Cells[0].Value == null) ? string.Empty : item.Cells[0].Value.ToString()),
-                //       new XElement("Password", (item.Cells[1].Value == null) ? string.Empty : Convert.ToBase64String(Encoding.UTF8.GetBytes(item.Cells[1].Value.ToString()))),
-                //       new XElement("Privilege", (item.Cells[2].Value == null) ? string.Empty : item.Cells[2].Value.ToString())
-
-                //        ));
-
-                //    obj.log("Admin: " + DataOperations.EmailId + " added to Users Privilege Table row no : " + (oldRowCount).ToString());
-
-                //}
-
-                //doc.Save(path);
-
-                //obj.log("Admin: " + DataOperations.EmailId + " visited Add Conversion Data");
-                //MessageBox.Show("Saved successfully");
             }
             catch (Exception ex)
             {

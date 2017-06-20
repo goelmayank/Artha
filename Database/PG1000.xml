@@ -110,11 +110,11 @@
   </Row>
   <Row>
     <Id>9</Id>
-    <English>Close©</English>
+    <English>Close(C)</English>
     <Arabic>*</Arabic>
     <German>Schließen</German>
     <Italian>*</Italian>
-    <Japanese>閉じる©</Japanese>
+    <Japanese>閉じる(C)</Japanese>
     <Korean>*</Korean>
     <Norwegian>*</Norwegian>
     <Spanish>*</Spanish>
@@ -150,7 +150,7 @@
     <Arabic>*</Arabic>
     <German>Anwendung</German>
     <Italian>*</Italian>
-    <Japanese>アップリケション終了(X)</Japanese>
+    <Japanese>アプリケーションの終了(X)</Japanese>
     <Korean>*</Korean>
     <Norwegian>*</Norwegian>
     <Spanish>*</Spanish>
@@ -302,7 +302,7 @@
   </Row>
   <Row>
     <Id>25</Id>
-    <English>Refresh®</English>
+    <English>Refresh(R)</English>
     <Arabic>*</Arabic>
     <German>*</German>
     <Italian>*</Italian>
@@ -462,7 +462,7 @@
     <Arabic>*</Arabic>
     <German>*</German>
     <Italian>*</Italian>
-    <Japanese>リストチェック®</Japanese>
+    <Japanese>リストチェック(R)</Japanese>
     <Korean>*</Korean>
     <Norwegian>*</Norwegian>
     <Spanish>*</Spanish>

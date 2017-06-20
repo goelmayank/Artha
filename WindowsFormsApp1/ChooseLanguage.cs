@@ -41,6 +41,10 @@ namespace WindowsFormsApp1
             DataOperations.ApplicationJustGotStarted = false;
             var doc = XDocument.Load(DataOperations.path + "PG1000.xml").Descendants("Row");
             int i= 0, height = 13;
+            if (obj.getPrivilege(DataOperations.EmailId) == "Admin")
+            {
+                height += 24;
+            }
             Array.Clear(DataOperations.txt, 0, DataOperations.txt.Length);
             Array.Clear(DataOperations.lbl, 0, DataOperations.lbl.Length);
             string Message="User " + DataOperations.EmailId + " chose language conversion from " + checkedButton.Text + " to ";
@@ -66,30 +70,6 @@ namespace WindowsFormsApp1
                 try
 
                 {
-                    //DataOperations.dictionary[ctrl.Text].Clear();
-                    //DataOperations.dictionary[ctrl.Text] = doc.ToDictionary(
-                    //    p => (string)p.Element(checkedButton.Text).Value,
-                    //    p => (string)p.Element(ctrl.Text).Value
-                    //);
-
-
-
-                    //DataOperations.dictionary[ctrl.Text] = doc.Select(p => (new DataOperations.TargetVal()
-                    //{
-                    //    srcLan = (string)p.Element(checkedButton.Text).Value,
-                    //    trgLan = (string)p.Element(ctrl.Text).Value
-                    //})).ToList();
-
-                    //try
-                    //{
-
-                    //}
-                    //catch (Exception)
-                    //{
-
-                    //    throw;
-                    //}
-
                     targets = new List<DataOperations.TargetVal>();
                     foreach (var item in doc)
                     {
@@ -107,7 +87,7 @@ namespace WindowsFormsApp1
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    Console.WriteLine(ex.Message);
                 }
                 i++; height += 27;
             }
