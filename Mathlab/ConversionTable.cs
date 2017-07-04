@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-        //private DataSet ds = new DataSet();
+        
         private void Form2_Load(object sender, EventArgs e)
         {
             var xDocument = XDocument.Load(path);
@@ -36,9 +36,8 @@ namespace WindowsFormsApp1
             {
                 dataGridView1.ReadOnly = true;
             }
-            //addRowToolStripMenuItem.Visible = !(editUsersToolStripMenuItem.Visible = (obj.getPrivilege(DataOperations.EmailId) == "Admin") ? true : false);
             editUsersToolStripMenuItem.Visible = (obj.getPrivilege(DataOperations.EmailId) == "Admin") ? true : false;
-            obj.log("Email Id: " + DataOperations.EmailId + " Visited Conveersion Table");
+            obj.log("Email Id: " + DataOperations.EmailId + " Visited Conversion Table");
         }        
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,10 +48,12 @@ namespace WindowsFormsApp1
         private void confirmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
-            {                                
+            {
                 dataGridView1.EndEdit();
+                dataGridView1.BackgroundColor = Color.White;
                 doc.Save(path);
                 MessageBox.Show("Saved successfully");
+                Form2_Load(sender, e);
             }
             catch (Exception ex)
             {
@@ -93,16 +94,6 @@ namespace WindowsFormsApp1
                     " " + dataGridView1.Columns[dataGridView1.CurrentCell.ColumnIndex].HeaderText + 
                     " entry to " + dataGridView1.CurrentCell.Value.ToString()
                     );
-                /* upd.Element("English").Value = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                 upd.Element("Arabic").Value = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-                 upd.Element("German").Value = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-                 upd.Element("Italian").Value = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                 upd.Element("Japanese").Value = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-                 upd.Element("Korean").Value = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-                 upd.Element("Norwegian").Value = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
-                 upd.Element("Spanish").Value = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
-                 upd.Element("Swedish").Value = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
-                 */
             }
             catch(Exception ex)
             {
@@ -176,10 +167,9 @@ namespace WindowsFormsApp1
                         MessageBox.Show(string.Format("{0} updates failed due to read only column setting", iFail));
                 }
             }
-            catch (FormatException)
+            catch (Exception ex)
             {
-                MessageBox.Show("The data you pasted is in the wrong format for the cell");
-                return;
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -190,6 +180,10 @@ namespace WindowsFormsApp1
 
         private void CopyCode()
         {
+            if (obj.getPrivilege(DataOperations.EmailId) == "Editor")
+            {
+                return;
+            }
             DataObject d = dataGridView1.GetClipboardContent();
             Clipboard.SetDataObject(d);
         }
@@ -198,6 +192,10 @@ namespace WindowsFormsApp1
         {
             try
             {
+                if (obj.getPrivilege(DataOperations.EmailId) == "Editor")
+                {
+                    return;
+                }
                 string s = Clipboard.GetText();
                 string[] lines = s.Split('\n');
                 int linesToAdd = lines.Length - (dataGridView1.Rows.Count - dataGridView1.CurrentCell.RowIndex);
@@ -239,10 +237,9 @@ namespace WindowsFormsApp1
                         MessageBox.Show(string.Format("{0} updates failed due to read only column setting", iFail));
                 }
             }
-            catch (FormatException)
+            catch (Exception ex)
             {
-                MessageBox.Show("The data you pasted is in the wrong format for the cell");
-                return;
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -253,14 +250,15 @@ namespace WindowsFormsApp1
 
         private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
         {
-            if ((e.Control && e.KeyCode == Keys.Delete) || (e.Shift && e.KeyCode == Keys.Delete))
+
+            if (e.Control && e.KeyCode == Keys.C)
             {
                 CopyCode();
             }
-            if ((e.Control && e.KeyCode == Keys.Insert) || (e.Shift && e.KeyCode == Keys.Insert))
-            {
-                PasteCode();
-            }
+            //else if (e.Control && e.KeyCode == Keys.V)
+            //{
+            //    PasteCode();
+            //}
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -272,14 +270,27 @@ namespace WindowsFormsApp1
         {
             try
             {
-                foreach (DataGridViewRow dr in dataGridView1.SelectedRows)
+                if (obj.getPrivilege(DataOperations.EmailId) == "Editor")
                 {
-                    dataGridView1.Rows.RemoveAt(dr.Index);
+                    return;
+                }
+                if (dataGridView1.SelectedRows.Count == 0)
+                    MessageBox.Show("No row selected. Click on the left margin to select a row");
+                else
+                {
+                    foreach (DataGridViewRow dr in dataGridView1.SelectedRows)
+                    {
+                        doc.Descendants("Row").Where(x => x.Element("Id").Value == dataGridView1.Rows[dr.Index].Cells[0].Value.ToString()).Remove();                        
+                        obj.log("Email Id: " + DataOperations.EmailId +
+                            " deleted Conversion Table row no " + dataGridView1.Rows[dr.Index].Cells[0].Value.ToString()
+                            );
+                        dataGridView1.Rows.RemoveAt(dr.Index);
+                    }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                Console.WriteLine(ex.Message);
                 return;
             }
         }

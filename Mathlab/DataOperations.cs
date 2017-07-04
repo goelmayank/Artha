@@ -5,7 +5,6 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Windows.Forms;
-using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
@@ -47,7 +46,7 @@ namespace WindowsFormsApp1
             { "Italian", new List<TargetVal>() },
             { "Japanese", new List<TargetVal>() },
             { "Korean", new List<TargetVal>() },
-            { "Morwegian", new List<TargetVal>() },
+            { "Norwegian", new List<TargetVal>() },
             { "Spanish", new List<TargetVal>() },
             { "Swedish", new List<TargetVal>() },
         };

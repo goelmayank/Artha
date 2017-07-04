@@ -17,6 +17,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             oldRowCont = rowCnt;
+            //Clipboard.Clear();
         }
 
         private void confirmToolStripMenuItem_Click(object sender, EventArgs e)

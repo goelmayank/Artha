@@ -3,70 +3,10 @@
   <Row>
     <Id>0</Id>
     <English>File(F)</English>
-    <Arabic>asdf</Arabic>
+    <Arabic>7667</Arabic>
     <German>Datei</German>
     <Italian>*</Italian>
     <Japanese>ファイル(F)</Japanese>
-    <Korean>*</Korean>
-    <Norwegian>*</Norwegian>
-    <Spanish>*</Spanish>
-    <Swedish>*</Swedish>
-  </Row>
-  <Row>
-    <Id>1</Id>
-    <English>Project(P)</English>
-    <Arabic>dd</Arabic>
-    <German>Projekt</German>
-    <Italian>*</Italian>
-    <Japanese>プロジェクト(P)</Japanese>
-    <Korean>*</Korean>
-    <Norwegian>*</Norwegian>
-    <Spanish>*</Spanish>
-    <Swedish>*</Swedish>
-  </Row>
-  <Row>
-    <Id>2</Id>
-    <English>Loop(L)</English>
-    <Arabic>ghyjhg</Arabic>
-    <German>Schleife</German>
-    <Italian>*</Italian>
-    <Japanese>ループ(L)</Japanese>
-    <Korean>*</Korean>
-    <Norwegian>*</Norwegian>
-    <Spanish>*</Spanish>
-    <Swedish>*</Swedish>
-  </Row>
-  <Row>
-    <Id>3</Id>
-    <English>Node(U)</English>
-    <Arabic>*</Arabic>
-    <German>Nicken</German>
-    <Italian>*</Italian>
-    <Japanese>ノード(U)</Japanese>
-    <Korean>*</Korean>
-    <Norwegian>*</Norwegian>
-    <Spanish>*</Spanish>
-    <Swedish>*</Swedish>
-  </Row>
-  <Row>
-    <Id>4</Id>
-    <English>Module(M)</English>
-    <Arabic>*</Arabic>
-    <German>Modul</German>
-    <Italian>*</Italian>
-    <Japanese>モジュール(M)</Japanese>
-    <Korean>*</Korean>
-    <Norwegian>*</Norwegian>
-    <Spanish>*</Spanish>
-    <Swedish>*</Swedish>
-  </Row>
-  <Row>
-    <Id>5</Id>
-    <English>Utility(T)</English>
-    <Arabic>*</Arabic>
-    <German>Dienstprogramm</German>
-    <Italian>*</Italian>
-    <Japanese>ユーテイりテイ(T)</Japanese>
     <Korean>*</Korean>
     <Norwegian>*</Norwegian>
     <Spanish>*</Spanish>
@@ -101,9 +41,9 @@
     <English>Open(O)</English>
     <Arabic>*</Arabic>
     <German>Öffnen</German>
-    <Italian>*</Italian>
+    <Italian>sdsd</Italian>
     <Japanese>開く(O)</Japanese>
-    <Korean>*</Korean>
+    <Korean>sdsd</Korean>
     <Norwegian>*</Norwegian>
     <Spanish>*</Spanish>
     <Swedish>*</Swedish>
@@ -1670,5 +1610,18 @@
     <Norwegian>*</Norwegian>
     <Spanish>*</Spanish>
     <Swedish>*</Swedish>
+  </Row>
+  <Row>
+    <Id>140</Id>
+    <English>File(F)</English>
+    <Arabic>7667</Arabic>
+    <German>Datei</German>
+    <Italian>*</Italian>
+    <Japanese>ファイル(F)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*
+</Swedish>
   </Row>
 </Root>
