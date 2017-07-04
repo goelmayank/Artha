@@ -38,6 +38,9 @@
     <ApplicationIcon>ABB-Logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GoogleTranslateAPI">
+      <HintPath>..\Dll\googleAPI\googleAPI\GoogleTranslateAPI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

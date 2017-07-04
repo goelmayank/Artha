@@ -30,27 +30,14 @@ namespace WindowsFormsApp1
         public static bool toSwedishEnabled = false;
         public static bool toAllEnabled = false;
         public static int ClientSize;
+        public static bool Autodetect = true;
         private XDocument UsersDoc = XDocument.Load(path + "Users.xml");
-
+        
        public class TargetVal
         {
            public string srcLan;
            public string trgLan;
         }
-
-        //public static Dictionary<string, Dictionary<string, string>> dictionary = new Dictionary<string, Dictionary<string, string>>()
-        //{
-        //    { "Arabic", new Dictionary<string, string>() },
-        //    { "English", new Dictionary<string, string>() },
-        //    { "German", new Dictionary<string, string>() },
-        //    { "Italian", new Dictionary<string, string>() },
-        //    { "Japanese", new Dictionary<string, string>() },
-        //    { "Korean", new Dictionary<string, string>() },
-        //    { "Morwegian", new Dictionary<string, string>() },
-        //    { "Spanish", new Dictionary<string, string>() },
-        //    { "Swedish", new Dictionary<string, string>() }
-        //};
-
 
         public static Dictionary<string,List<TargetVal>> dictionary = new Dictionary<string, List<TargetVal>>()
         {

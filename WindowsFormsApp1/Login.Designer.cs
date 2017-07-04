@@ -86,6 +86,7 @@ namespace WindowsFormsApp1
             this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(300, 20);
             this.tbPassword.TabIndex = 21;
+            this.tbPassword.Text = "admin";
             this.tbPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbPassword_KeyDown);
             // 
             // label2
@@ -103,6 +104,7 @@ namespace WindowsFormsApp1
             this.tbEmailId.Name = "tbEmailId";
             this.tbEmailId.Size = new System.Drawing.Size(299, 20);
             this.tbEmailId.TabIndex = 19;
+            this.tbEmailId.Text = "admin@in.abb.com";
             this.tbEmailId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbEmailId_KeyDown);
             // 
             // label1

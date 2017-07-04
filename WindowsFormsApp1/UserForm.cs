@@ -106,8 +106,6 @@ namespace WindowsFormsApp1
 
         private void LastColumnComboSelectionChanged(object sender, EventArgs e)
         {
-            //doc = 
-
             XElement upd = doc.Descendants("Person").ToList().Where(x => x.Element("Id").Value == dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString())
                     .Single();
             

@@ -14,3 +14,5 @@ C:\Users\INMAGOE1\documents\visual studio 2017\Projects\WindowsFormsApp1\Windows
 C:\Users\INMAGOE1\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\INMAGOE1\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
 C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddUser.resources
+C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\GoogleTranslateAPI.pdb
+C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\GoogleTranslateAPI.xml

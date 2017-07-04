@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
@@ -85,6 +87,7 @@ namespace WindowsFormsApp1
                     x.Element("Id").Value == dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString())
                     .Single();
                 upd.Element(dataGridView1.Columns[dataGridView1.CurrentCell.ColumnIndex].HeaderText).Value = dataGridView1.CurrentCell.Value.ToString();
+                dataGridView1.CurrentCell.Style.BackColor = Color.Tomato;
                 obj.log("Email Id: " + DataOperations.EmailId + 
                     " modified Conversion Table row no "+ dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString() + 
                     " " + dataGridView1.Columns[dataGridView1.CurrentCell.ColumnIndex].HeaderText + 
@@ -130,6 +133,155 @@ namespace WindowsFormsApp1
             ChooseLanguage f2 = new ChooseLanguage();
             f2.FormClosed += F2_FormClosed;
             f2.ShowDialog();
+        }
+
+        private void PasteClipboard()
+        {
+            try
+            {
+                string s = Clipboard.GetText();
+                string[] lines = s.Split('\n');
+                int iFail = 0, iRow = dataGridView1.CurrentCell.RowIndex;
+                int iCol = dataGridView1.CurrentCell.ColumnIndex;
+                DataGridViewCell oCell;
+                foreach (string line in lines)
+                {
+                    if (iRow < dataGridView1.RowCount && line.Length > 0)
+                    {
+                        string[] sCells = line.Split('\t');
+                        for (int i = 0; i < sCells.GetLength(0); ++i)
+                        {
+                            if (iCol + i < this.dataGridView1.ColumnCount)
+                            {
+                                oCell = dataGridView1[iCol + i, iRow];
+                                if (!oCell.ReadOnly)
+                                {
+                                    if (oCell.Value.ToString() != sCells[i])
+                                    {
+                                        oCell.Value = Convert.ChangeType(sCells[i], oCell.ValueType);
+                                        oCell.Style.BackColor = Color.Tomato;
+                                    }
+                                    else
+                                        iFail++;//only traps a fail if the data has changed and you are pasting into a read only cell
+                                }
+                            }
+                            else
+                            { break; }
+                        }
+                        iRow++;
+                    }
+                    else
+                    { break; }
+                    if (iFail > 0)
+                        MessageBox.Show(string.Format("{0} updates failed due to read only column setting", iFail));
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("The data you pasted is in the wrong format for the cell");
+                return;
+            }
+        }
+
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CopyCode();
+        }
+
+        private void CopyCode()
+        {
+            DataObject d = dataGridView1.GetClipboardContent();
+            Clipboard.SetDataObject(d);
+        }
+
+        private void PasteCode()
+        {
+            try
+            {
+                string s = Clipboard.GetText();
+                string[] lines = s.Split('\n');
+                int linesToAdd = lines.Length - (dataGridView1.Rows.Count - dataGridView1.CurrentCell.RowIndex);
+                int iFail = 0, iRow = dataGridView1.CurrentCell.RowIndex;
+                int iCol = dataGridView1.CurrentCell.ColumnIndex;
+                DataGridViewCell oCell;
+                foreach (string line in lines)
+                {
+                    if (string.IsNullOrWhiteSpace(line)) continue;
+                    if (iRow < dataGridView1.RowCount && line.Length > 0)
+                    {
+                        string[] sCells = line.Split('\t');
+                        for (int i = 0; i < sCells.GetLength(0); ++i)
+                        {
+                            if (iCol + i < this.dataGridView1.ColumnCount)
+                            {
+                                oCell = dataGridView1[iCol + i, iRow];
+                                if (oCell.Value == null)
+                                {
+                                    oCell.Value = Convert.ChangeType(sCells[i], oCell.ValueType);
+                                }
+                                else if (oCell.Value.ToString() != sCells[i])
+                                {
+                                    oCell.Value = Convert.ChangeType(sCells[i], oCell.ValueType);
+                                }
+                                else
+                                    iFail++;//only traps a fail if the data has changed and you are pasting into a read only cell
+                                if (linesToAdd-- > 0)
+                                    dataGridView1.Rows.Add();
+                            }
+                            else
+                            { break; }
+                        }
+                        iRow++;
+                    }
+                    else
+                    { break; }
+                    if (iFail > 0)
+                        MessageBox.Show(string.Format("{0} updates failed due to read only column setting", iFail));
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("The data you pasted is in the wrong format for the cell");
+                return;
+            }
+        }
+
+        private void pasteCtrlVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PasteCode();
+        }
+
+        private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if ((e.Control && e.KeyCode == Keys.Delete) || (e.Shift && e.KeyCode == Keys.Delete))
+            {
+                CopyCode();
+            }
+            if ((e.Control && e.KeyCode == Keys.Insert) || (e.Shift && e.KeyCode == Keys.Insert))
+            {
+                PasteCode();
+            }
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeleteCode();
+        }
+
+        private void DeleteCode()
+        {
+            try
+            {
+                foreach (DataGridViewRow dr in dataGridView1.SelectedRows)
+                {
+                    dataGridView1.Rows.RemoveAt(dr.Index);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
         }
     }
 }

@@ -5,8 +5,10 @@ using System.Runtime.InteropServices;
 using System.Windows.Automation;
 using System.Windows.Forms;
 using System.Drawing;
+using Google.API.Translate;
 using System.Xml.Linq;
 using System.Text;
+using System.Net;
 
 namespace WindowsFormsApp1
 {
@@ -46,6 +48,7 @@ namespace WindowsFormsApp1
 
         POINT p;
         DataOperations obj = new DataOperations();
+        //string result;
         public MainForm()
         {
             InitializeComponent();
@@ -126,8 +129,18 @@ namespace WindowsFormsApp1
                     // no element under mouse
                     return "";
                 }
+
+                //if (DataOperations.Autodetect)
+                //{
+                //    Console.WriteLine($"{element}");
+                    //TranslateYourText($"{element.Current.Name}", DataOperations.FromLanguage, toLang);
+                    //if (!string.IsNullOrEmpty(result= TranslateYourText($"{element.Current.Name}", DataOperations.FromLanguage, toLang)))
+                    //{
+                    //    return result;
+                    //}
+                //}
+
                 // Replacing key with value from Dictionary
-            
                 return string.Join(" ", $"{element.Current.Name}".Split(' ').Select(
                     i => DataOperations.dictionary[toLang].Any(tlcls=> tlcls.srcLan==i) ?
                     DataOperations.dictionary[toLang].Where(tlcl => tlcl.srcLan == i).FirstOrDefault().trgLan : i));
