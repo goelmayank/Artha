@@ -3,7 +3,7 @@
   <Row>
     <Id>0</Id>
     <English>File(F)</English>
-    <Arabic>7667</Arabic>
+    <Arabic>juio</Arabic>
     <German>Datei</German>
     <Italian>*</Italian>
     <Japanese>ファイル(F)</Japanese>
@@ -17,20 +17,8 @@
     <English>Help(H)</English>
     <Arabic>*</Arabic>
     <German>Hilfe</German>
-    <Italian>*</Italian>
+    <Italian>nj</Italian>
     <Japanese>ヘルプ(H)</Japanese>
-    <Korean>*</Korean>
-    <Norwegian>*</Norwegian>
-    <Spanish>*</Spanish>
-    <Swedish>*</Swedish>
-  </Row>
-  <Row>
-    <Id>7</Id>
-    <English>Create New(N)</English>
-    <Arabic>*</Arabic>
-    <German>Erstelle Neu</German>
-    <Italian>*</Italian>
-    <Japanese>新規作成(N)</Japanese>
     <Korean>*</Korean>
     <Norwegian>*</Norwegian>
     <Spanish>*</Spanish>
@@ -51,8 +39,8 @@
   <Row>
     <Id>9</Id>
     <English>Close(C)</English>
-    <Arabic>*</Arabic>
-    <German>Schließen</German>
+    <Arabic>ftty</Arabic>
+    <German>nvgh</German>
     <Italian>*</Italian>
     <Japanese>閉じる(C)</Japanese>
     <Korean>*</Korean>
@@ -1618,6 +1606,84 @@
     <German>Datei</German>
     <Italian>*</Italian>
     <Japanese>ファイル(F)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*
+</Swedish>
+  </Row>
+  <Row>
+    <Id>141</Id>
+    <English>Close(C)</English>
+    <Arabic>*</Arabic>
+    <German>Schließen</German>
+    <Italian>fdghyf</Italian>
+    <Japanese>dfdh</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*
+</Swedish>
+  </Row>
+  <Row>
+    <Id>142</Id>
+    <English>Auto Start Up(S)</English>
+    <Arabic>*</Arabic>
+    <German>Automatische Inbetriebnahme</German>
+    <Italian>*</Italian>
+    <Japanese>自動スタートアップ(S)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*
+</Swedish>
+  </Row>
+  <Row>
+    <Id>143</Id>
+    <English>File(F)</English>
+    <Arabic>asdf</Arabic>
+    <German>Datei</German>
+    <Italian>*</Italian>
+    <Japanese>ファイル(F)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*
+</Swedish>
+  </Row>
+  <Row>
+    <Id>144</Id>
+    <English>Project(P)</English>
+    <Arabic>dd</Arabic>
+    <German>Projekt</German>
+    <Italian>*</Italian>
+    <Japanese>プロジェクト(P)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*
+</Swedish>
+  </Row>
+  <Row>
+    <Id>145</Id>
+    <English>File(F)</English>
+    <Arabic>asdf</Arabic>
+    <German>Datei</German>
+    <Italian>*</Italian>
+    <Japanese>ファイル(F)</Japanese>
+    <Korean>*</Korean>
+    <Norwegian>*</Norwegian>
+    <Spanish>*</Spanish>
+    <Swedish>*
+</Swedish>
+  </Row>
+  <Row>
+    <Id>146</Id>
+    <English>Project(P)</English>
+    <Arabic>dd</Arabic>
+    <German>Projekt</German>
+    <Italian>*</Italian>
+    <Japanese>プロジェクト(P)</Japanese>
     <Korean>*</Korean>
     <Norwegian>*</Norwegian>
     <Spanish>*</Spanish>

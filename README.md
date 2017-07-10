@@ -14,7 +14,7 @@ A Windows Application for enabling users to work in softwarwes having a foreign 
 ### version 0.0.2: This can read data from csv,accessdb, xml format files and add to accessdb and xml format files. The primary window has only one textbox for displaying text under the mouse after conversion(if one is available). The subsidiary window allows to add key value pairs to the xml and accessdb format files. Supported languages are Japanese and English.
 ### version 1.0.0: 
 
-##Features
+## Features
 
 ### Multiple privileges to ensure data protection
 
@@ -34,26 +34,39 @@ The Editors and Admin can copy, paste and delete rows directly from/to the appli
 
 ### User Login & Signup 
 
+1. The user logins in using his/her registered email id and password.
+2. The user can also signup with a new email id.
+3. After the user clicks on submit, he/she is redirected to the choose language window or the conversion data table window based on his/her user privileges.
 
+#### The default privilege of newly registered users is "user"
+#### Users with "Admin" and "Editor" privileges are redirected to the conversion data table window while those with "User" privilege are directed to the choose language window
 
 ### Choose Language
 
+1. The user has to chose one of the 9 languages as the source language of the software. 
+#### The source language of the software refers to the language of the software's user interface
 
+2. The user can chose one or more of the 9 languages as the target language.  
+#### The target language refers to the language in which the user is comfortable in or wants for the software's user interface
 
 ### Main Form
 
-1. It parses the xml file, curently from the database folder.
-2. It stores the values in the form of a list with key value pairs.
-3. It shows a simple textbox.
-4. After the start button is clicked, it starts reading the text under the mouse.
-5. The text is then compared against the key in the dictionary.
-5. If there is a match, it replaces it with its value in the dictionary.
-6. It then displays the text in the textbox.
-7. The program can be started or stopped at any point of time using the corresponding start and stop buttons.
-8. To exit the program, one can use the close button or directly close the exe file.
+1. In the background, one or more language dictionary(s) has been created with a list of source language (key) and target language (value) pairs.
+2. It displays one or more text boxes with corresponding label(s) of the language(s) that has(ve) been selected as target language by the user.
+3. As the user starts using the source software, Matlab application reads the text below the mouse.
+4. In the background, the application compares the text it has thus read with the source language (key) values in the respective language dictionary.
+5. If there is a match, it replaces it with its target language pair value from the corresponding dictionary.
+6. It then displays the text in the textbox for the corresponding language.
+7. To change language prefernces, user needs to close the window and login again.
+
+#### The number of dictionaries that are formed is dependent on  the number of target languages chosen by the user.
+#### The source launguage values in each dictionary is from the words or phrases that are pre-defined in the database for the language that has been selected as the source language.
+#### The target launguage values in each dictionary is from the words or phrases that are pre-defined in the database for the language that has been selected as the target language.
+#### Each language dictionary is named after the the target language since there is one common source language. 
 
 ### Conversion Data table
 
+1. The language 
 
 
 ### Add Conversion Data table
