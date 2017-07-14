@@ -1600,19 +1600,6 @@
     <Swedish>*</Swedish>
   </Row>
   <Row>
-    <Id>140</Id>
-    <English>File(F)</English>
-    <Arabic>7667</Arabic>
-    <German>Datei</German>
-    <Italian>*</Italian>
-    <Japanese>ファイル(F)</Japanese>
-    <Korean>*</Korean>
-    <Norwegian>*</Norwegian>
-    <Spanish>*</Spanish>
-    <Swedish>*
-</Swedish>
-  </Row>
-  <Row>
     <Id>141</Id>
     <English>Close(C)</English>
     <Arabic>*</Arabic>
@@ -1639,38 +1626,12 @@
 </Swedish>
   </Row>
   <Row>
-    <Id>143</Id>
-    <English>File(F)</English>
-    <Arabic>asdf</Arabic>
-    <German>Datei</German>
-    <Italian>*</Italian>
-    <Japanese>ファイル(F)</Japanese>
-    <Korean>*</Korean>
-    <Norwegian>*</Norwegian>
-    <Spanish>*</Spanish>
-    <Swedish>*
-</Swedish>
-  </Row>
-  <Row>
     <Id>144</Id>
     <English>Project(P)</English>
     <Arabic>dd</Arabic>
     <German>Projekt</German>
     <Italian>*</Italian>
     <Japanese>プロジェクト(P)</Japanese>
-    <Korean>*</Korean>
-    <Norwegian>*</Norwegian>
-    <Spanish>*</Spanish>
-    <Swedish>*
-</Swedish>
-  </Row>
-  <Row>
-    <Id>145</Id>
-    <English>File(F)</English>
-    <Arabic>asdf</Arabic>
-    <German>Datei</German>
-    <Italian>*</Italian>
-    <Japanese>ファイル(F)</Japanese>
     <Korean>*</Korean>
     <Norwegian>*</Norwegian>
     <Spanish>*</Spanish>
