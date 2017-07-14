@@ -1,35 +1,55 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using System.Xml.XPath;
+
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// Search Form
+    /// </summary>
+    /// <seealso cref="System.Windows.Forms.Form" />
     public partial class Search : Form
     {
+        /// <summary>
+        /// The path
+        /// </summary>
         private string path = DataOperations.path + "PG1000.xml";
+        /// <summary>
+        /// The object
+        /// </summary>
         private DataOperations obj = new DataOperations();
+        /// <summary>
+        /// The document
+        /// </summary>
         private XDocument doc;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Search" /> class.
+        /// </summary>
         public Search()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the Load event of the Search control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void Search_Load(object sender, EventArgs e)
         {
             doc = XDocument.Load(path);
         }
 
+        /// <summary>
+        /// Handles the TextChanged event of the searchWord control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void searchWord_TextChanged(object sender, EventArgs e)
         {
             string language = searchLanguage.Text;
@@ -63,11 +83,19 @@ namespace WindowsFormsApp1
             
         }
 
+        /// <summary>
+        /// Handles the Click event of the copyToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void copyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CopyCode();
         }
 
+        /// <summary>
+        /// Copies the code.
+        /// </summary>
         private void CopyCode()
         {
             if (obj.getPrivilege(DataOperations.EmailId) == "Editor")
@@ -78,11 +106,19 @@ namespace WindowsFormsApp1
             Clipboard.SetDataObject(d);
         }
 
+        /// <summary>
+        /// Handles the Click event of the deleteToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeleteCode();
         }
 
+        /// <summary>
+        /// Deletes the code.
+        /// </summary>
         private void DeleteCode()
         {
             try
@@ -113,6 +149,11 @@ namespace WindowsFormsApp1
             }
         }
 
+        /// <summary>
+        /// Handles the KeyDown event of the dataGridView1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="KeyEventArgs" /> instance containing the event data.</param>
         private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Control && e.KeyCode == Keys.C)
@@ -121,11 +162,21 @@ namespace WindowsFormsApp1
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the aboutToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This sample is developed by Mayank Goel, Intern, ABB Pvt. Ltd. Core. Please read the Readme.htm for more details");
+            MessageBox.Show("This sample is developed by IAPG, ABB. Please read the Readme.docx for more details");
         }
 
+        /// <summary>
+        /// Handles the Click event of the confirmToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void confirmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();

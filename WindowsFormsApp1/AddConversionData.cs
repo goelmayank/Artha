@@ -7,12 +7,32 @@ using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// Add Conversions Data Class
+    /// </summary>
+    /// <seealso cref="System.Windows.Forms.Form" />
     public partial class AddConversionData : Form
     {
+        /// <summary>
+        /// The object
+        /// </summary>
         private DataOperations obj = new DataOperations();
+        /// <summary>
+        /// The document
+        /// </summary>
         private XDocument doc = XDocument.Load(DataOperations.path + "PG1000.xml");
+        /// <summary>
+        /// The path
+        /// </summary>
         string path = DataOperations.path + "PG1000.xml";
+        /// <summary>
+        /// The old row cont
+        /// </summary>
         int oldRowCont = 0;
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AddConversionData" /> class.
+        /// </summary>
+        /// <param name="rowCnt">The row count.</param>
         public AddConversionData(int rowCnt)
         {
             InitializeComponent();
@@ -20,6 +40,11 @@ namespace WindowsFormsApp1
             //Clipboard.Clear();
         }
 
+        /// <summary>
+        /// Handles the Click event of the confirmToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void confirmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -56,27 +81,47 @@ namespace WindowsFormsApp1
             this.Close();
         }
 
+        /// <summary>
+        /// Handles the Click event of the aboutToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This sample is developed by Mayank Goel, Intern, ABB Pvt. Ltd. Core. Please read the Readme.htm for more details");
+            MessageBox.Show("This sample is developed by IAPG, ABB. Please read the Readme.docx for more details");
         }
+        /// <summary>
+        /// Handles the Click event of the copyToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void copyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CopyCode();
         }
-             
 
+        /// <summary>
+        /// Handles the Click event of the pasteCtrlVToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void pasteCtrlVToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PasteCode();
         }
-        
+
+        /// <summary>
+        /// Copies the code.
+        /// </summary>
         private void CopyCode()
         {
             DataObject d = dataGridView1.GetClipboardContent();
             Clipboard.SetDataObject(d);
         }
 
+        /// <summary>
+        /// Pastes the code.
+        /// </summary>
         private void PasteCode()
         {
             try
@@ -130,8 +175,11 @@ namespace WindowsFormsApp1
             }
         }
 
-       
-
+        /// <summary>
+        /// Handles the KeyDown event of the dataGridView1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="KeyEventArgs" /> instance containing the event data.</param>
         private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
         {
             if ((e.Control && e.KeyCode == Keys.Delete) || (e.Shift && e.KeyCode == Keys.Delete))
@@ -144,11 +192,19 @@ namespace WindowsFormsApp1
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the deleteToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeleteCode();
         }
 
+        /// <summary>
+        /// Deletes the code.
+        /// </summary>
         private void DeleteCode()
         {
             try

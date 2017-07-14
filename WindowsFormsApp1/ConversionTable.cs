@@ -8,16 +8,37 @@ using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// Conversion Table  Class
+    /// </summary>
+    /// <seealso cref="System.Windows.Forms.Form" />
     public partial class ConversionTable : Form
     {
+        /// <summary>
+        /// The path
+        /// </summary>
         private string path = DataOperations.path + "PG1000.xml";
+        /// <summary>
+        /// The object
+        /// </summary>
         private DataOperations obj = new DataOperations();
+        /// <summary>
+        /// The document
+        /// </summary>
         private XDocument doc;
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConversionTable" /> class.
+        /// </summary>
         public ConversionTable()
         {
             InitializeComponent();             
         }
-        
+
+        /// <summary>
+        /// Handles the Load event of the Form2 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void Form2_Load(object sender, EventArgs e)
         {
             doc = XDocument.Load(path);
@@ -39,13 +60,23 @@ namespace WindowsFormsApp1
             }
             editUsersToolStripMenuItem.Visible = (obj.getPrivilege(DataOperations.EmailId) == "Admin") ? true : false;
             obj.log("Email Id: " + DataOperations.EmailId + " Visited Conversion Table");
-        }        
-
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("This sample is developed by Mayank Goel, Intern, ABB Pvt. Ltd. Core. Please read the Readme.htm for more details");
         }
 
+        /// <summary>
+        /// Handles the Click event of the aboutToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This sample is developed by IAPG, ABB. Please read the Readme.docx for more details");
+        }
+
+        /// <summary>
+        /// Handles the Click event of the confirmToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void confirmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -63,11 +94,21 @@ namespace WindowsFormsApp1
             
         }
 
+        /// <summary>
+        /// Handles the FormClosed event of the F2 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="FormClosedEventArgs" /> instance containing the event data.</param>
         private void F2_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Close();
         }
-              
+
+        /// <summary>
+        /// Handles the Click event of the editUsersToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void editUsersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -76,11 +117,21 @@ namespace WindowsFormsApp1
             f2.ShowDialog();
         }
 
+        /// <summary>
+        /// Handles the FormClosed2 event of the F2 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="FormClosedEventArgs" /> instance containing the event data.</param>
         private void F2_FormClosed2(object sender, FormClosedEventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// Handles the CellValueChanged event of the dataGridView1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="DataGridViewCellEventArgs" /> instance containing the event data.</param>
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -104,6 +155,11 @@ namespace WindowsFormsApp1
             
         }
 
+        /// <summary>
+        /// Handles the Click event of the addRowToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void addRowToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -113,12 +169,22 @@ namespace WindowsFormsApp1
             f2.ShowDialog();
         }
 
+        /// <summary>
+        /// Handles the FormClosed1 event of the F2 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="FormClosedEventArgs" /> instance containing the event data.</param>
         private void F2_FormClosed1(object sender, FormClosedEventArgs e)
         {
             Form2_Load(sender, e);
             this.Show();
         }
 
+        /// <summary>
+        /// Handles the Click event of the testToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void testToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -128,11 +194,19 @@ namespace WindowsFormsApp1
             f2.ShowDialog();
         }
 
+        /// <summary>
+        /// Handles the Click event of the copyToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void copyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CopyCode();
         }
 
+        /// <summary>
+        /// Copies the code.
+        /// </summary>
         private void CopyCode()
         {
             if (obj.getPrivilege(DataOperations.EmailId) == "Editor")
@@ -143,6 +217,11 @@ namespace WindowsFormsApp1
             Clipboard.SetDataObject(d);
         }
 
+        /// <summary>
+        /// Handles the KeyDown event of the dataGridView1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="KeyEventArgs" /> instance containing the event data.</param>
         private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
         {
 
@@ -152,11 +231,19 @@ namespace WindowsFormsApp1
             }            
         }
 
+        /// <summary>
+        /// Handles the Click event of the deleteToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeleteCode();
         }
 
+        /// <summary>
+        /// Deletes the code.
+        /// </summary>
         private void DeleteCode()
         {
             try
@@ -187,6 +274,11 @@ namespace WindowsFormsApp1
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the searchToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -196,6 +288,11 @@ namespace WindowsFormsApp1
             f2.ShowDialog();
         }
 
+        /// <summary>
+        /// Handles the FormClosed3 event of the F2 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="FormClosedEventArgs" /> instance containing the event data.</param>
         private void F2_FormClosed3(object sender, FormClosedEventArgs e)
         {
             Form2_Load(sender, e);

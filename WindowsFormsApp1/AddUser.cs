@@ -4,18 +4,43 @@ using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// Add New Users Class
+    /// </summary>
+    /// <seealso cref="System.Windows.Forms.Form" />
     public partial class AddUser : Form
     {
+        /// <summary>
+        /// The object
+        /// </summary>
         private DataOperations obj = new DataOperations();
+        /// <summary>
+        /// The document
+        /// </summary>
         private XDocument doc = XDocument.Load(DataOperations.path + "Users.xml");
+        /// <summary>
+        /// The path
+        /// </summary>
         string path = DataOperations.path + "Users.xml";
+        /// <summary>
+        /// The old row count
+        /// </summary>
         int oldRowCount = 0;
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AddUser"/> class.
+        /// </summary>
+        /// <param name="rowCnt">The row count.</param>
         public AddUser(int rowCnt)
         {
             InitializeComponent();
             oldRowCount = rowCnt;
         }
 
+        /// <summary>
+        /// Handles the Click event of the confirmToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void confirmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -54,11 +79,21 @@ namespace WindowsFormsApp1
             this.Close();
         }
 
+        /// <summary>
+        /// Handles the Click event of the aboutToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This sample is developed by Mayank Goel, Intern, ABB Pvt. Ltd. Core. Please read the Readme.htm for more details");
+            MessageBox.Show("This sample is developed by IAPG, ABB. Please read the Readme.docx for more details");
         }
 
+        /// <summary>
+        /// Handles the EditingControlShowing event of the dataGridView1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="DataGridViewEditingControlShowingEventArgs"/> instance containing the event data.</param>
         private void dataGridView1_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
             if (dataGridView1.CurrentCell.ColumnIndex == 2 && e.Control is ComboBox)
@@ -68,6 +103,11 @@ namespace WindowsFormsApp1
             }
         }
 
+        /// <summary>
+        /// Lasts the column combo selection changed.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void LastColumnComboSelectionChanged(object sender, EventArgs e)
         {
             dataGridView1.CurrentRow.Cells[2].Value = dataGridView1.CurrentCell.EditedFormattedValue.ToString();

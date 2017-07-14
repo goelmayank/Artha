@@ -9,48 +9,111 @@ using System.IO;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// Main Form Class
+    /// </summary>
+    /// <seealso cref="System.Windows.Forms.Form" />
     public partial class MainForm : Form
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [StructLayout(LayoutKind.Sequential)]
         public struct POINT
         {
+            /// <summary>
+            /// The x
+            /// </summary>
             public int X;
+            /// <summary>
+            /// The y
+            /// </summary>
             public int Y;
 
+            /// <summary>
+            /// Initializes a new instance of the <see cref="POINT"/> struct.
+            /// </summary>
+            /// <param name="x">The x.</param>
+            /// <param name="y">The y.</param>
             public POINT(int x, int y)
             {
                 this.X = x;
                 this.Y = y;
             }
 
+            /// <summary>
+            /// Initializes a new instance of the <see cref="POINT"/> struct.
+            /// </summary>
+            /// <param name="pt">The pt.</param>
             public POINT(Point pt) : this(pt.X, pt.Y) { }
 
+            /// <summary>
+            /// Performs an implicit conversion from <see cref="POINT"/> to <see cref="Point"/>.
+            /// </summary>
+            /// <param name="p">The p.</param>
+            /// <returns>
+            /// The result of the conversion.
+            /// </returns>
             public static implicit operator Point(POINT p)
             {
                 return new Point(p.X, p.Y);
             }
 
+            /// <summary>
+            /// Performs an implicit conversion from <see cref="Point"/> to <see cref="POINT"/>.
+            /// </summary>
+            /// <param name="p">The p.</param>
+            /// <returns>
+            /// The result of the conversion.
+            /// </returns>
             public static implicit operator POINT(Point p)
             {
                 return new POINT(p.X, p.Y);
             }
         }
 
+        /// <summary>
+        /// Windows from point.
+        /// </summary>
+        /// <param name="p">The p.</param>
+        /// <returns></returns>
         [DllImport("User32.dll")]
         static extern IntPtr WindowFromPoint(POINT p);
 
+        /// <summary>
+        /// Gets the cursor position.
+        /// </summary>
+        /// <param name="p">The p.</param>
+        /// <returns></returns>
         [DllImport("User32.dll")]
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool GetCursorPos(ref POINT p);
 
+        /// <summary>
+        /// The p
+        /// </summary>
         POINT p;
+        /// <summary>
+        /// The object
+        /// </summary>
         DataOperations obj = new DataOperations();
+        /// <summary>
+        /// The store the text read
+        /// </summary>
         private bool storeTheTextRead;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainForm" /> class.
+        /// </summary>
         public MainForm()
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Handles the Load event of the Form1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void Form1_Load(object sender, EventArgs e)
         {
             if ( obj.getPrivilege(DataOperations.EmailId) == "Admin" )
@@ -96,6 +159,11 @@ namespace WindowsFormsApp1
             tmrCursorPos.Start();
         }
 
+        /// <summary>
+        /// Handles the Tick event of the tmrCursorPos control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tmrCursorPos_Tick(object sender, EventArgs e)
         {
             try
@@ -131,6 +199,11 @@ namespace WindowsFormsApp1
             }
         }
 
+        /// <summary>
+        /// Gets the text below the cursor.
+        /// </summary>
+        /// <param name="toLang">To language.</param>
+        /// <returns></returns>
         string GetTextBelowTheCursor(string toLang)
         {
             try
@@ -162,16 +235,31 @@ namespace WindowsFormsApp1
 
         }
 
+        /// <summary>
+        /// Handles the Click event of the aboutToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This sample is developed by Mayank Goel, Intern, ABB Pvt. Ltd. Core. Please read the Readme.htm for more details");
+            MessageBox.Show("This sample is developed by IAPG, ABB. Please read the Readme.docx for more details");
         }
 
+        /// <summary>
+        /// Handles the Click event of the storeTheTextReadToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void storeTheTextReadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             storeTheTextRead = true;
         }
 
+        /// <summary>
+        /// Handles the Click event of the returnToConvewrsionTableToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void returnToConvewrsionTableToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -180,6 +268,11 @@ namespace WindowsFormsApp1
             f2.ShowDialog();
         }
 
+        /// <summary>
+        /// Handles the FormClosed event of the F2 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="FormClosedEventArgs" /> instance containing the event data.</param>
         private void F2_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Close();

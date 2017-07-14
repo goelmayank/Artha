@@ -6,21 +6,47 @@ using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// User Privileges Table
+    /// </summary>
+    /// <seealso cref="System.Windows.Forms.Form" />
     public partial class UserForm : Form
     {
+        /// <summary>
+        /// The object
+        /// </summary>
         private DataOperations obj = new DataOperations();
+        /// <summary>
+        /// The document
+        /// </summary>
         private XDocument doc = XDocument.Load(DataOperations.path + "Users.xml");
+        /// <summary>
+        /// The path
+        /// </summary>
         string path = DataOperations.path + "Users.xml";
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserForm"/> class.
+        /// </summary>
         public UserForm()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the Click event of the aboutToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This sample is developed by Mayank Goel, Intern, ABB Pvt. Ltd. Core. Please read the Readme.htm for more details");
+            MessageBox.Show("This sample is developed by IAPG, ABB. Please read the Readme.docx for more details");
         }
 
+        /// <summary>
+        /// Handles the Click event of the confirmToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void confirmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -41,11 +67,19 @@ namespace WindowsFormsApp1
             f2.ShowDialog();
         }
 
+        /// <summary>
+        /// Handles the FormClosed event of the F2 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="FormClosedEventArgs"/> instance containing the event data.</param>
         private void F2_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// Fills the DGV.
+        /// </summary>
         private void fillDGV()
         {
             var res = doc.Descendants("Person").ToList();
@@ -55,6 +89,11 @@ namespace WindowsFormsApp1
             dataGridView1.Columns["Privilege"].Visible = false;
             this.dataGridView1.AllowUserToAddRows = false;
         }
+        /// <summary>
+        /// Handles the Load event of the Form6 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void Form6_Load(object sender, EventArgs e)
         {
             fillDGV();
@@ -67,6 +106,11 @@ namespace WindowsFormsApp1
             col.Items.Add("Admin");
         }
 
+        /// <summary>
+        /// Handles the CellValueChanged event of the dataGridView1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="DataGridViewCellEventArgs"/> instance containing the event data.</param>
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             XElement upd = doc.Descendants("Person").ToList().Where(x => x.Element("Id").Value == dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString())
@@ -80,6 +124,11 @@ namespace WindowsFormsApp1
                 );
         }
 
+        /// <summary>
+        /// Handles the Click event of the addUserToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -89,12 +138,22 @@ namespace WindowsFormsApp1
             f2.ShowDialog();
         }
 
+        /// <summary>
+        /// Handles the FormClosed1 event of the F2 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="FormClosedEventArgs"/> instance containing the event data.</param>
         private void F2_FormClosed1(object sender, FormClosedEventArgs e)
         {
             fillDGV();
             this.Show();
         }
 
+        /// <summary>
+        /// Handles the EditingControlShowing event of the dataGridView1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="DataGridViewEditingControlShowingEventArgs"/> instance containing the event data.</param>
         private void dataGridView1_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
             if (dataGridView1.CurrentCell.ColumnIndex == 4 && e.Control is ComboBox)
@@ -104,6 +163,11 @@ namespace WindowsFormsApp1
             }
         }
 
+        /// <summary>
+        /// Lasts the column combo selection changed.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void LastColumnComboSelectionChanged(object sender, EventArgs e)
         {
             XElement upd = doc.Descendants("Person").ToList().Where(x => x.Element("Id").Value == dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString())

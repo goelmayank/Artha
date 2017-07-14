@@ -8,13 +8,28 @@ using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// Choose Language Table
+    /// </summary>
+    /// <seealso cref="System.Windows.Forms.Form" />
     public partial class ChooseLanguage : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ChooseLanguage"/> class.
+        /// </summary>
         public ChooseLanguage()
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// The object
+        /// </summary>
         DataOperations obj = new DataOperations();
+        /// <summary>
+        /// Handles the Load event of the Form3 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         public void Form3_Load(object sender, EventArgs e)
         {
             checkBox1.CheckState = (DataOperations.toEnglishEnabled || DataOperations.toAllEnabled) ? CheckState.Checked : CheckState.Unchecked;
@@ -32,6 +47,11 @@ namespace WindowsFormsApp1
 
         }
 
+        /// <summary>
+        /// Handles the Click event of the homeToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var checkedButton = groupBox1.Controls.OfType<RadioButton>()
@@ -99,62 +119,122 @@ namespace WindowsFormsApp1
             f2.ShowDialog();
         }
 
+        /// <summary>
+        /// Handles the FormClosed event of the F2 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="FormClosedEventArgs"/> instance containing the event data.</param>
         private void F2_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// Handles the Click event of the aboutToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This sample is developed by Mayank Goel, Intern, ABB Pvt. Ltd. Core. Please read the Readme.htm for more details");
+            MessageBox.Show("This sample is developed by IAPG, ABB. Please read the Readme.docx for more details");
         }
 
+        /// <summary>
+        /// Handles the 1 event of the checkBox1_CheckedChanged control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
             DataOperations.toEnglishEnabled = (checkBox1.CheckState == CheckState.Checked || checkBox10.CheckState == CheckState.Checked);
         }
 
+        /// <summary>
+        /// Handles the 1 event of the checkBox2_CheckedChanged control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void checkBox2_CheckedChanged_1(object sender, EventArgs e)
         {
             DataOperations.toArabicEnabled = (checkBox2.CheckState == CheckState.Checked || checkBox10.CheckState == CheckState.Checked);
         }
 
+        /// <summary>
+        /// Handles the 1 event of the checkBox3_CheckedChanged control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void checkBox3_CheckedChanged_1(object sender, EventArgs e)
         {
             DataOperations.toGermanEnabled = (checkBox3.CheckState == CheckState.Checked || checkBox10.CheckState == CheckState.Checked);
         }
 
+        /// <summary>
+        /// Handles the 1 event of the checkBox4_CheckedChanged control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void checkBox4_CheckedChanged_1(object sender, EventArgs e)
         {
             DataOperations.toItalianEnabled = (checkBox4.CheckState == CheckState.Checked || checkBox10.CheckState == CheckState.Checked);
         }
 
+        /// <summary>
+        /// Handles the 1 event of the checkBox5_CheckedChanged control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void checkBox5_CheckedChanged_1(object sender, EventArgs e)
         {
             DataOperations.toJapaneseEnabled = (checkBox5.CheckState == CheckState.Checked || checkBox10.CheckState == CheckState.Checked);
         }
 
+        /// <summary>
+        /// Handles the 1 event of the checkBox6_CheckedChanged control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void checkBox6_CheckedChanged_1(object sender, EventArgs e)
         {
             DataOperations.toKoreanEnabled = (checkBox6.CheckState == CheckState.Checked || checkBox10.CheckState == CheckState.Checked);
         }
 
+        /// <summary>
+        /// Handles the 1 event of the checkBox7_CheckedChanged control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void checkBox7_CheckedChanged_1(object sender, EventArgs e)
         {
             DataOperations.toNorwegianEnabled = (checkBox7.CheckState == CheckState.Checked || checkBox10.CheckState == CheckState.Checked);
         }
 
+        /// <summary>
+        /// Handles the 1 event of the checkBox8_CheckedChanged control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void checkBox8_CheckedChanged_1(object sender, EventArgs e)
         {
             DataOperations.toSpanishEnabled = (checkBox8.CheckState == CheckState.Checked || checkBox10.CheckState == CheckState.Checked);
         }
 
+        /// <summary>
+        /// Handles the 1 event of the checkBox9_CheckedChanged control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void checkBox9_CheckedChanged_1(object sender, EventArgs e)
         {
             DataOperations.toSwedishEnabled = (checkBox9.CheckState == CheckState.Checked || checkBox10.CheckState == CheckState.Checked);
         }
 
 
+        /// <summary>
+        /// Handles the 1 event of the checkBox10_CheckedChanged control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void checkBox10_CheckedChanged_1(object sender, EventArgs e)
         {
             DataOperations.toAllEnabled = (checkBox10.CheckState == CheckState.Checked);
