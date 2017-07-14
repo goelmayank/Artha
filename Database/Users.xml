@@ -1,12 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Persons>
   <Person>
-    <Id>0</Id>
-    <EmailId>Mayank.goel@in.abb.com</EmailId>
-    <Password>MTIz</Password>
-    <Privilege>User</Privilege>
-  </Person>
-  <Person>
     <Id>1</Id>
     <EmailId>admin@in.abb.com</EmailId>
     <Password>YWRtaW4=</Password>
@@ -23,47 +17,5 @@
     <EmailId>User@in.abb.com</EmailId>
     <Password>dXNlcg==</Password>
     <Privilege>User</Privilege>
-  </Person>
-  <Person>
-    <Id>4</Id>
-    <EmailId>ee</EmailId>
-    <Password></Password>
-    <Privilege>Editor</Privilege>
-  </Person>
-  <Person>
-    <Id>5</Id>
-    <EmailId>abb</EmailId>
-    <Password>shal</Password>
-    <Privilege>Editor</Privilege>
-  </Person>
-  <Person>
-    <Id>6</Id>
-    <EmailId>adf</EmailId>
-    <Password>sdsd</Password>
-    <Privilege>User</Privilege>
-  </Person>
-  <Person>
-    <Id>7</Id>
-    <EmailId>dsf</EmailId>
-    <Password>sdf</Password>
-    <Privilege>Editor</Privilege>
-  </Person>
-  <Person>
-    <Id>8</Id>
-    <EmailId>ghlk</EmailId>
-    <Password>Z2Z5Zg==</Password>
-    <Privilege>Admin</Privilege>
-  </Person>
-  <Person>
-    <Id>9</Id>
-    <EmailId>checking</EmailId>
-    <Password>Y2hlY2s=</Password>
-    <Privilege>User</Privilege>
-  </Person>
-  <Person>
-    <Id>10</Id>
-    <EmailId>abc</EmailId>
-    <Password>YXNhcw==</Password>
-    <Privilege>Admin</Privilege>
   </Person>
 </Persons>

@@ -3,7 +3,6 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
@@ -129,53 +128,6 @@ namespace WindowsFormsApp1
             f2.ShowDialog();
         }
 
-        //private void PasteClipboard()
-        //{
-        //    try
-        //    {
-        //        string s = Clipboard.GetText();
-        //        string[] lines = s.Split('\n');
-        //        int iFail = 0, iRow = dataGridView1.CurrentCell.RowIndex;
-        //        int iCol = dataGridView1.CurrentCell.ColumnIndex;
-        //        DataGridViewCell oCell;
-        //        foreach (string line in lines)
-        //        {
-        //            if (iRow < dataGridView1.RowCount && line.Length > 0)
-        //            {
-        //                string[] sCells = line.Split('\t');
-        //                for (int i = 0; i < sCells.GetLength(0); ++i)
-        //                {
-        //                    if (iCol + i < this.dataGridView1.ColumnCount)
-        //                    {
-        //                        oCell = dataGridView1[iCol + i, iRow];
-        //                        if (!oCell.ReadOnly)
-        //                        {
-        //                            if (oCell.Value.ToString() != sCells[i])
-        //                            {
-        //                                oCell.Value = Convert.ChangeType(sCells[i], oCell.ValueType);
-        //                                oCell.Style.BackColor = Color.Tomato;
-        //                            }
-        //                            else
-        //                                iFail++;//only traps a fail if the data has changed and you are pasting into a read only cell
-        //                        }
-        //                    }
-        //                    else
-        //                    { break; }
-        //                }
-        //                iRow++;
-        //            }
-        //            else
-        //            { break; }
-        //            if (iFail > 0)
-        //                MessageBox.Show(string.Format("{0} updates failed due to read only column setting", iFail));
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-
         private void copyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CopyCode();
@@ -191,77 +143,13 @@ namespace WindowsFormsApp1
             Clipboard.SetDataObject(d);
         }
 
-        //private void PasteCode()
-        //{
-        //    try
-        //    {
-        //        if (obj.getPrivilege(DataOperations.EmailId) == "Editor")
-        //        {
-        //            return;
-        //        }
-        //        string s = Clipboard.GetText();
-        //        string[] lines = s.Split('\n');
-        //        int linesToAdd = lines.Length - (dataGridView1.Rows.Count - dataGridView1.CurrentCell.RowIndex);
-        //        int iFail = 0, iRow = dataGridView1.CurrentCell.RowIndex;
-        //        int iCol = dataGridView1.CurrentCell.ColumnIndex;
-        //        DataGridViewCell oCell;
-        //        foreach (string line in lines)
-        //        {
-        //            if (string.IsNullOrWhiteSpace(line)) continue;
-        //            if (iRow < dataGridView1.RowCount && line.Length > 0)
-        //            {
-        //                string[] sCells = line.Split('\t');
-        //                for (int i = 0; i < sCells.GetLength(0); ++i)
-        //                {
-        //                    if (iCol + i < this.dataGridView1.ColumnCount)
-        //                    {
-        //                        oCell = dataGridView1[iCol + i, iRow];
-        //                        if (oCell.Value == null)
-        //                        {
-        //                            oCell.Value = Convert.ChangeType(sCells[i], oCell.ValueType);
-        //                        }
-        //                        else if (oCell.Value.ToString() != sCells[i])
-        //                        {
-        //                            oCell.Value = Convert.ChangeType(sCells[i], oCell.ValueType);
-        //                        }
-        //                        else
-        //                            iFail++;//only traps a fail if the data has changed and you are pasting into a read only cell
-        //                        if (linesToAdd-- > 0)
-        //                            dataGridView1.Rows.Add();
-        //                    }
-        //                    else
-        //                    { break; }
-        //                }
-        //                iRow++;
-        //            }
-        //            else
-        //            { break; }
-        //            if (iFail > 0)
-        //                MessageBox.Show(string.Format("{0} updates failed due to read only column setting", iFail));
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-
-        //private void pasteCtrlVToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    PasteCode();
-        //}
-
         private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
         {
 
             if (e.Control && e.KeyCode == Keys.C)
             {
                 CopyCode();
-            }
-            //else if (e.Control && e.KeyCode == Keys.V)
-            //{
-            //    PasteCode();
-            //}
+            }            
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -298,5 +186,21 @@ namespace WindowsFormsApp1
                 return;
             }
         }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            obj.log("Email Id: " + DataOperations.EmailId + " started Search");
+            Search f2 = new Search();
+            f2.FormClosed += F2_FormClosed3;
+            f2.ShowDialog();
+        }
+
+        private void F2_FormClosed3(object sender, FormClosedEventArgs e)
+        {
+            Form2_Load(sender, e);
+            this.Show();
+        }
+
     }
 }

@@ -31,16 +31,16 @@ namespace WindowsFormsApp1
         public static int ClientSize;
         public static bool Autodetect = true;
         private XDocument UsersDoc = XDocument.Load(path + "Users.xml");
-        
-       public class TargetVal
+
+        public class TargetVal
         {
-           public string srcLan;
-           public string trgLan;
+            public string srcLan;
+            public string trgLan;
         }
 
-        public static Dictionary<string,List<TargetVal>> dictionary = new Dictionary<string, List<TargetVal>>()
+        public static Dictionary<string, List<TargetVal>> dictionary = new Dictionary<string, List<TargetVal>>()
         {
-            { "Arabic", new List<TargetVal>() }, 
+            { "Arabic", new List<TargetVal>() },
             { "English", new List<TargetVal>() },
             { "German", new List<TargetVal>() },
             { "Italian", new List<TargetVal>() },
@@ -64,7 +64,7 @@ namespace WindowsFormsApp1
                        new XElement("Password", Convert.ToBase64String(Encoding.UTF8.GetBytes(Password))),
                        new XElement("Privilege", Privilege)
                         ));
-                
+
                 UsersDoc.Save(path + "Users.xml");
                 log("New user with Email Id " + EmailId + " is registered");
 
@@ -77,7 +77,7 @@ namespace WindowsFormsApp1
         }
         public bool alreadyRegistered(string EmailId)
         {
-            
+
             foreach (XElement Person in UsersDoc.Descendants("Person"))
             {
                 if (string.Compare(Person.Element("EmailId").Value, EmailId, true) == 0)
@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
         }
         public bool login(string EmailId, string Password)
         {
-            
+
             foreach (XElement Person in UsersDoc.Descendants("Person"))
             {
                 if (string.Compare(Person.Element("EmailId").Value, EmailId, true) == 0 && Encoding.UTF8.GetString(Convert.FromBase64String(Person.Element("Password").Value)) == Password)
@@ -110,11 +110,12 @@ namespace WindowsFormsApp1
             IPAddress[] addr = ipEntry.AddressList;
 
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(text +" at: " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.ff")+ " from IP Address: " + addr[addr.Length - 1].ToString());
+            sb.AppendLine(text + " at: " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.ff") + " from IP Address: " + addr[addr.Length - 1].ToString());
             // flush every 20 seconds as you do it
             File.AppendAllText(path + "log.txt", sb.ToString());
             sb.Clear();
         }
+
         public bool verifyEmailId(string email)
         {
             try

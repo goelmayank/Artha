@@ -16,3 +16,22 @@ C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\Windows
 C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Mathlab.csproj.GenerateResource.Cache
 C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\INMAGOE1\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\bin\Debug\GoogleTranslateAPI.pdb
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\bin\Debug\GoogleTranslateAPI.xml
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\Mathlab.csprojResolveAssemblyReference.cache
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddConversionData.resources
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddUser.resources
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainForm.resources
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ConversionTable.resources
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ChooseLanguage.resources
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Register.resources
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserForm.resources
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\Mathlab.csproj.GenerateResource.Cache
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\INMAGOE1\Documents\Mathlab\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Search.resources

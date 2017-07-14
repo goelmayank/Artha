@@ -1,4 +1,4 @@
-# Mathlab - Creating Multilingual Support for Windows Applications
+# Artha - Creating Multilingual Support for Windows Applications
 
 A Windows Application for enabling users to work in softwarwes having a foreign language interface
 
@@ -47,7 +47,7 @@ The Editors and Admin can copy, paste and delete rows directly from/to the appli
 #### The source language of the software refers to the language of the software's user interface
 
 2. The user can chose one or more of the 9 languages as the target language.  
-#### The target language refers to the language in which the user is comfortable in or wants for the software's user interface
+	#### The target language refers to the language in which the user is comfortable in or wants for the software's user interface
 
 ### Main Form
 
@@ -66,22 +66,31 @@ The Editors and Admin can copy, paste and delete rows directly from/to the appli
 
 ### Conversion Data table
 
-1. The language 
+1. The table reads from the database and lists all the key value conversion pairs.
+2. Only the admin and editor have access to it. While the editor can only add new rows of data, the admin can edit the databse and even access the editor privilege table.
+3. To delete one or more rows of data, one should select the entire rows by clicking on the empty space on the left of each of the rows.
+4. Shortcut keys like Ctrl+C and Delete and mouse select options are enabled on the table to copy and delete the data.
+5. As soon as admin makes any changeto any data column, it turns red until the user clicks on the save button.
 
+#### The save button is a misnomer as it only serves to reload the table from the database. All the changes to the database are live and happen as soon as user makes any change.
 
 ### Add Conversion Data table
 
-
+1. The table allows editor/admin to enter new data rows.
+2. Besides copy and delete functionality like in the previous table, Paste is also enabled.
+3. To paste data, user must click on the first column entry of the table and paste data using Ctrl + V or right click and select Paste option.
 
 ### User Privilege Table
 
+1. The table is accessible only by the admin.
+2. Admin can view the name and the privilege of registered users.
+3. Admin can also access the add new user option.
 
+### User privilege can be only be chosen from a drop down menu from one of the 3 choices, namely, User, Editor and Admin.
 
 ### Add User Table
 
-
-
-
+1. The table allows Admin to add neew users and set their password and privileges.
 
 
 ## Motivation

@@ -5,10 +5,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Automation;
 using System.Windows.Forms;
 using System.Drawing;
-using Google.API.Translate;
-using System.Xml.Linq;
-using System.Text;
-using System.Net;
+using System.IO;
 
 namespace WindowsFormsApp1
 {
@@ -48,7 +45,8 @@ namespace WindowsFormsApp1
 
         POINT p;
         DataOperations obj = new DataOperations();
-        //string result;
+        private bool storeTheTextRead;
+
         public MainForm()
         {
             InitializeComponent();
@@ -60,16 +58,23 @@ namespace WindowsFormsApp1
                 this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
                 this.aboutToolStripMenuItem.Size = new Size(52, 20);
                 this.aboutToolStripMenuItem.Text = "About";
-                this.aboutToolStripMenuItem.Click += new EventHandler(this.aboutToolStripMenuItem_Click_1);
-               
+                this.aboutToolStripMenuItem.Click += new EventHandler(this.aboutToolStripMenuItem_Click);
+
                 this.returnToConvewrsionTableToolStripMenuItem.Name = "returnToConvewrsionTableToolStripMenuItem";
                 this.returnToConvewrsionTableToolStripMenuItem.Size = new Size(179, 20);
                 this.returnToConvewrsionTableToolStripMenuItem.Text = "Return to Conversion Table";
                 this.returnToConvewrsionTableToolStripMenuItem.Click += new EventHandler(this.returnToConvewrsionTableToolStripMenuItem_Click);
 
+                this.storeTheTextReadToolStripMenuItem.Name = "storeTheTextReadToolStripMenuItem";
+                this.storeTheTextReadToolStripMenuItem.Size = new Size(179, 20);
+                this.storeTheTextReadToolStripMenuItem.Text = "Store The Text Read";
+                this.storeTheTextReadToolStripMenuItem.Click += new EventHandler(this.storeTheTextReadToolStripMenuItem_Click);
+
                 this.menuStrip1.Items.AddRange(new ToolStripItem[] {
-                this.aboutToolStripMenuItem,
-                this.returnToConvewrsionTableToolStripMenuItem});
+                    this.aboutToolStripMenuItem,
+                    this.returnToConvewrsionTableToolStripMenuItem,
+                    this.storeTheTextReadToolStripMenuItem
+                });
                 this.menuStrip1.Location = new Point(0, 0);
                 this.menuStrip1.Name = "menuStrip1";
                 this.menuStrip1.Size = new Size(375, 24);
@@ -77,6 +82,7 @@ namespace WindowsFormsApp1
                 this.menuStrip1.Text = "menuStrip1";
 
                 this.Controls.Add(this.menuStrip1);
+                storeTheTextRead = false;
             }
 
             for (int i = 0; i < DataOperations.txt.Length; i++)
@@ -92,31 +98,39 @@ namespace WindowsFormsApp1
 
         private void tmrCursorPos_Tick(object sender, EventArgs e)
         {
-            bool retVal = GetCursorPos(ref p);
-            if (retVal)
+            try
             {
-                IntPtr hwnd = WindowFromPoint(p);
-
-                if (hwnd.ToInt64() > 0)
+                bool retVal = GetCursorPos(ref p);
+                if (retVal)
                 {
-                    if (DataOperations.ApplicationJustGotStarted)
+                    IntPtr hwnd = WindowFromPoint(p);
+
+                    if (hwnd.ToInt64() > 0)
                     {
-                        DataOperations.txt[0].Text = GetTextBelowTheCursor("English");
-                    }
-                    else
-                    {
-                        foreach (var tbx in DataOperations.txt)
+                        if (DataOperations.ApplicationJustGotStarted)
                         {
-                            if (tbx != null)
+                            DataOperations.txt[0].Text = GetTextBelowTheCursor("English");
+                        }
+                        else
+                        {
+                            foreach (var tbx in DataOperations.txt)
                             {
-                                TextBox tb = this.Controls.Find(tbx.Name, true).FirstOrDefault() as TextBox;
-                                tb.Text = GetTextBelowTheCursor(tbx.Name);
+                                if (tbx != null)
+                                {
+                                    TextBox tb = this.Controls.Find(tbx.Name, true).FirstOrDefault() as TextBox;
+                                    tb.Text = GetTextBelowTheCursor(tbx.Name);
+                                }
                             }
                         }
                     }
                 }
             }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
+
         string GetTextBelowTheCursor(string toLang)
         {
             try
@@ -130,15 +144,10 @@ namespace WindowsFormsApp1
                     return "";
                 }
 
-                //if (DataOperations.Autodetect)
-                //{
-                //    Console.WriteLine($"{element}");
-                    //TranslateYourText($"{element.Current.Name}", DataOperations.FromLanguage, toLang);
-                    //if (!string.IsNullOrEmpty(result= TranslateYourText($"{element.Current.Name}", DataOperations.FromLanguage, toLang)))
-                    //{
-                    //    return result;
-                    //}
-                //}
+                if (storeTheTextRead)
+                {
+                    File.AppendAllText(DataOperations.path + "TextRead.txt", $"{element.Current.Name}" + Environment.NewLine);
+                }
 
                 // Replacing key with value from Dictionary
                 return string.Join(" ", $"{element.Current.Name}".Split(' ').Select(
@@ -153,9 +162,14 @@ namespace WindowsFormsApp1
 
         }
 
-        private void aboutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This sample is developed by Mayank Goel, Intern, ABB Pvt. Ltd. Core. Please read the Readme.htm for more details");
+        }
+
+        private void storeTheTextReadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            storeTheTextRead = true;
         }
 
         private void returnToConvewrsionTableToolStripMenuItem_Click(object sender, EventArgs e)
@@ -165,29 +179,10 @@ namespace WindowsFormsApp1
             f2.FormClosed += F2_FormClosed;
             f2.ShowDialog();
         }
+
         private void F2_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Close();
         }
-        //private void chooseLanguageToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    tmrCursorPos.Stop();
-        //    tmrCursorPos.Enabled = false;
-        //    this.Hide();
-        //    ChooseLanguage f3 = new ChooseLanguage();
-        //    f3.ShowDialog();
-        //}
-
-        //private void startToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    tmrCursorPos.Enabled = true;
-        //    tmrCursorPos.Start();
-        //}
-        //private void stopReadingToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    tmrCursorPos.Stop();
-        //    tmrCursorPos.Enabled = false;
-        //}
-
     }
 }

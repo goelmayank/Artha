@@ -33,14 +33,36 @@
             this.tmrCursorPos = new System.Windows.Forms.Timer(this.components);
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.returnToConvewrsionTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.storeTheTextReadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tmrCursorPos
             // 
             this.tmrCursorPos.Interval = 5;
             this.tmrCursorPos.Tick += new System.EventHandler(this.tmrCursorPos_Tick);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            // 
+            // returnToConvewrsionTableToolStripMenuItem
+            // 
+            this.returnToConvewrsionTableToolStripMenuItem.Name = "returnToConvewrsionTableToolStripMenuItem";
+            this.returnToConvewrsionTableToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            // 
+            // storeTheTextReadToolStripMenuItem
+            // 
+            this.storeTheTextReadToolStripMenuItem.Name = "storeTheTextReadToolStripMenuItem";
+            this.storeTheTextReadToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(200, 24);
+            this.menuStrip1.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -53,21 +75,19 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
-            this.Text = "Mathlab";
+            this.Text = "Artha";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Timer tmrCursorPos;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem; 
         private System.Windows.Forms.ToolStripMenuItem returnToConvewrsionTableToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem storeTheTextReadToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }
